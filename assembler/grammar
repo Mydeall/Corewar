@@ -1,0 +1,19 @@
+program = NAME carriage COMMENT carriage instruction
+carriage = \N (carriage | E)
+instruction = (LABEL | E) (carriage | E) (live | ld | st | add | sub | and | or | xor | zjmp | ldi | sti | fork | lld | lldi | lfork | aff) carriage (instruction | E)
+live = OPCODE==1 DIR
+ld = OPCODE==2 (IND | DIR) "," REG
+st = OPCODE==3 REG "," (IND | REG)
+add = OPCODE==4 REG "," REG "," REG
+sub = OPCODE==5 REG "," REG "," REG
+and = OPCODE==6 (REG | IND | DIR) "," (REG | IND | DIR) "," REG
+or = OPCODE==7 (REG | IND | DIR) "," (REG | IND | DIR) "," REG   
+xor = OPCODE==8 (REG | IND | DIR) "," (REG | IND | DIR) "," REG 
+zjmp = OPCODE==9 DIR
+ldi = OPCODE==10 (REG | IND | DIR) "," (DIR | REG) "," REG
+sti = OPCODE==11 REG "," (REG | DIR | IND) "," (DIR | REG)
+fork = OPCODE==12 DIR
+lld = OPCODE== 13 (DIR | IND) "," T_REG
+lldi = OPCODE== 14 (REG | IND | DIR) "," (DIR | REG) "," REG
+lfork = OPCODE==15 DIR 
+aff = OPCODE==16 REG
