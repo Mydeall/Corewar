@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tokens_functions.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/25 17:05:30 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/26 11:28:34 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int		create_token(t_token **token, t_reader *reader, int start)
 		return (1);
 	(*token)->lexem = NONE;
 	(*token)->value = reader->buff + start;
-	(*token)->line = reader->line;
-	(*token)->col = reader->col;
+	(*token)->line = reader->state == 6 ? reader->line + 1 : reader->line;
+	(*token)->col = reader->state == 6 ? 1 : reader->col;
 	(*token)->next = NULL;
 	return (0);
 }

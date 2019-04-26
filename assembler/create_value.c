@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_value.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/25 18:21:31 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/26 11:58:01 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,18 @@ static int	verif_command(t_token *token)
 
 	ret2 = 0;
 	if ((ret = strncmpchr(token->value, "name", 4)) == -1)
+	{
+		if (!ft_strchr(" \t", token->value[4]))
+			return (print_lex_error(token->line, token->col + 5));
 		token->lexem = NAME;
+	}
 	else if ((ret2 = strncmpchr(token->value, "comment", 7)) != -1)
 	{
-		printf("ret = %d -- ret2 = %d\n", ret, ret2);
 		ret = ret > ret2 ? ret : ret2;
 		return (print_lex_error(token->line, token->col + ret));
 	}
+	if (token->lexem == COMMENT && !ft_strchr(" \t", token->value[7]))
+		return (print_lex_error(token->line, token->col + 8));
 	while (*(token->value) != '\"')
 		(token->value)++;
 	(token->value)++;
@@ -39,37 +44,27 @@ static int	verif_command(t_token *token)
 static int	verif_opcode(t_token *token, int len)
 {
 	int i;
+	int	ret;
+	int	ret_max;
 
 	i = -1;
-	printf("token : %p\n", token);
-	if (token)
-		printf("value : |%s|\n", token->value);
+	ret_max = 0;
 	while (++i < 16)
 	{
-		if (!ft_strncmp(g_instructions[i], token->value, len))
+		ret = strncmpchr(token->value, g_instructions[i], len);
+		if (ret == -1)
 		{
 			if (!(token->value = ft_itoa(i + 1)))
 				return (-1);
 			return (0);
 		}
+		ret_max = ret > ret_max ? ret : ret_max;
 	}
-	return (print_lex_error(token->line, token->col));
+	return (print_lex_error(token->line, token->col + ret_max));
 }
 
-int	create_value(t_token *token, t_reader *reader)
+static int		trim_front_chars(t_token *token, t_reader *reader, int *len)
 {
-	int		len;
-	int		ret;
-	
-	if (reader->rest)
-	{
-		printf("cursor : %d\n", reader->cursor);
-		if (reader->cursor >= 0)
-			if (ft_strnappend(&(reader->rest), reader->buff, reader->cursor))
-				return (-1);
-		token->value = reader->rest;
-	}
-	printf("create_value\n");
 	while (*(token->value) == '\t' || *(token->value) == ' '
 			|| *(token->value) == '%' || *(token->value) == '.')
 	{
@@ -87,20 +82,35 @@ int	create_value(t_token *token, t_reader *reader)
 			return (1);
 		}
 	}
-	len = reader->rest ? ft_strlen(token->value)\
+	*len = reader->rest ? ft_strlen(token->value)\
 		  : reader->buff + reader->cursor - token->value + 1;
-	printf("len : %d\n", len);
+	if (token->value[*len - 1] == ':' || token->value[*len - 1] == '\"')
+		len--;
+	return (0);
+}
+
+int	create_value(t_token *token, t_reader *reader)
+{
+	int		len;
+	int		ret;
+	
+	if (reader->rest)
+	{
+		if (reader->cursor >= 0)
+			if (ft_strnappend(&(reader->rest), reader->buff, reader->cursor))
+				return (-1);
+		token->value = reader->rest;
+	}
+	if (trim_front_chars(token, reader, &len))
+		return (1);
 	if (token->lexem == OPCODE)
 	{
 		ret = verif_opcode(token, len);
 		ft_strdel(&(reader->rest));
 		return (ret);
 	}
-	if (token->value[len - 1] == ':' || token->value[len - 1] == '\"')
-		len--;
 	if (!(token->value = ft_strsub(token->value, 0, len)))
 		return (-1);
-	printf("value : |%s|\n", token->value);
 	if (reader->rest)
 		ft_strdel(&(reader->rest));
 	return (0);
