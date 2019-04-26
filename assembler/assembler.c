@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   assembler.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/25 16:40:09 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/26 18:26:11 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,31 @@ void	check_tokens(t_token *tokens)
 		printf("value = %s\n", tokens->value);
 		i++;
 		tokens = tokens->next;
+	}
+}
+
+void	check_instructions(t_instr *instructions)
+{
+	int		i;
+	t_token	*current_token;
+
+	i = 0;
+	while (instructions)
+	{
+		printf("---instruction no %d:---\nopcode = %d\n", i, instructions->opcode);
+		current_token = instructions->params;
+		while (current_token)
+		{
+			if (current_token->lexem == DIRECT)
+				printf("DIRECT->");
+			if (current_token->lexem == INDIRECT)
+				printf("INDIRECT->");	
+			if (current_token->lexem == REGISTER)
+				printf("REGISTER->");
+		}
+		printf("\n");
+		instructions = instructions->next;
+		i++;
 	}
 }
 

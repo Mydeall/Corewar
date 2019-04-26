@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/26 11:47:12 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/04/26 18:22:43 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ static int		automate(char c, int state)
 	i = -1;
 	while (++i < 12)
 	{
-		if ((ret = ft_strchr(g_index_col[i], c)))
+		if ((ret = ft_strchr(g_index_col_lex[i], c)))
 			break ;
 	}
-	new_state = g_automate[state][i];
+	new_state = g_automate_lex[state][i];
 	return (new_state);
 }
 
@@ -40,9 +40,9 @@ static int		state_manager(t_token **tokens, t_token **token,\
 		free(*token);
 		return (print_lex_error(reader->line, reader->col));
 	}
-	if (g_automate[*state][0] == -2 || g_automate[*state][0] == -3)
+	if (g_automate_lex_lex[*state][0] == -2 || g_automate_lex[*state][0] == -3)
 	{
-		if (g_automate[*state][0] == -3)
+		if (g_automate_lex_lex[*state][0] == -3)
 		{
 			(reader->cursor)--;
 			(reader->col)--;
@@ -92,7 +92,7 @@ int			manage_last_token(t_reader *reader, t_token **tokens)
 	token = *tokens;
 	while (token->next)
 		token = token->next;
-	if (g_automate[token->lexem][0] == -2 || g_automate[token->lexem][0] == -3)
+	if (g_automate_lex_lex[token->lexem][0] == -2 || g_automate_lex[token->lexem][0] == -3)
 		return (0);
 	reader->cursor = 0;
 	reader->state = automate('\n', reader->state);
@@ -101,7 +101,7 @@ int			manage_last_token(t_reader *reader, t_token **tokens)
 		ft_strdel(&(reader->rest));
 		return (ret);
 	}
-	if (g_automate[reader->state][0] != -2 && g_automate[reader->state][0] != -3)
+	if (g_automate_lex_lex[reader->state][0] != -2 && g_automate_lex[reader->state][0] != -3)
 	{
 		token->value = NULL;
 		return (print_lex_error(reader->line, reader->col));
