@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 12:05:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/25 18:20:20 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/29 15:57:28 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,11 +71,7 @@ int	strncmpchr(char *s1, char *s2, int n)
 	while (++i < n && (s1[i] || s2[i]))
 	{
 		if (s1[i] != s2[i])
-		{
-			printf("appel %d\n", appel);
-			printf("i = %d\n", i);
 			return (i);
-		}
 	}
 	return (-1);
 }

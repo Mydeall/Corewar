@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/26 18:22:43 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/04/29 19:51:11 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,33 +30,63 @@ static int		automate(char c, int state)
 	return (new_state);
 }
 
-static int		state_manager(t_token **tokens, t_token **token,\
-		t_reader *reader, int *state)
+static int		state_manager_scan(t_token **tokens, t_token **token,\
+		t_reader *reader, t_token **labels)
 {
 	int ret;
 
-	if (*state == -1)
+	if (reader->state == -1)
 	{
 		free(*token);
 		return (print_lex_error(reader->line, reader->col));
 	}
-	if (g_automate_lex_lex[*state][0] == -2 || g_automate_lex[*state][0] == -3)
+	if (g_automate_lex[reader->state][0] == -2\
+			|| g_automate_lex[reader->state][0] == -3)
 	{
-		if (g_automate_lex_lex[*state][0] == -3)
+		if (g_automate_lex[reader->state][0] == -3)
 		{
 			(reader->cursor)--;
 			(reader->col)--;
 		}
-		if ((ret = append_token(tokens, *token, *state, reader)))
+		if ((ret = append_token(tokens, *token, reader->state, reader)))
 			return (ret);
+		if (append_label(*token, labels))
+			return (-1);
 		if ((create_token(token, reader, reader->cursor + 1)))
 			return (-1);
-		*state = 0;
+		reader->state = 0;
 	}
 	return (0);
 }
 
-static int		buff_manager(t_reader *reader, t_token **tokens)
+int			manage_last_token(t_reader *reader, t_token **tokens)
+{
+	t_token *token;
+	int		ret;
+	
+	token = *tokens;
+	while (token->next)
+		token = token->next;
+	if (g_automate_lex[token->lexem][0] == -2\
+			|| g_automate_lex[token->lexem][0] == -3)
+		return (0);
+	reader->cursor = 0;
+	reader->state = automate('\n', reader->state);
+	if ((ret = complete_token(token, reader->state, reader)))
+	{
+		ft_strdel(&(reader->rest));
+		return (ret);
+	}
+	if (g_automate_lex[reader->state][0] != -2\
+			&& g_automate_lex[reader->state][0] != -3)
+	{
+		token->value = NULL;
+		return (print_lex_error(reader->line, reader->col));
+	}
+	return (0);
+}
+
+static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 {
 	t_token		*token;
 	int			ret;
@@ -67,7 +97,7 @@ static int		buff_manager(t_reader *reader, t_token **tokens)
 	while (reader->cursor < reader->nb_chars)
 	{
 		reader->state = automate(reader->buff[reader->cursor], reader->state);
-		if ((ret = state_manager(tokens, &token, reader, &(reader->state))))
+		if ((ret = state_manager_scan(tokens, &token, reader, labels)))
 			return (ret);
 		if (reader->cursor >= 0 && reader->buff[reader->cursor] == '\n')
 		{
@@ -84,32 +114,8 @@ static int		buff_manager(t_reader *reader, t_token **tokens)
 	return (0);
 }
 
-int			manage_last_token(t_reader *reader, t_token **tokens)
-{
-	t_token *token;
-	int		ret;
-	
-	token = *tokens;
-	while (token->next)
-		token = token->next;
-	if (g_automate_lex_lex[token->lexem][0] == -2 || g_automate_lex[token->lexem][0] == -3)
-		return (0);
-	reader->cursor = 0;
-	reader->state = automate('\n', reader->state);
-	if ((ret = complete_token(token, reader->state, reader)))
-	{
-		ft_strdel(&(reader->rest));
-		return (ret);
-	}
-	if (g_automate_lex_lex[reader->state][0] != -2 && g_automate_lex[reader->state][0] != -3)
-	{
-		token->value = NULL;
-		return (print_lex_error(reader->line, reader->col));
-	}
-	return (0);
-}	
 
-int			scanner_asm(int fd, t_token **tokens)
+int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 {
 	t_reader	reader;
 	int			ret;
@@ -123,7 +129,7 @@ int			scanner_asm(int fd, t_token **tokens)
 		if (reader.nb_chars == -1)
 			return (-1);
 		reader.cursor = 0;
-		if ((ret = buff_manager(&reader, tokens)))
+		if ((ret = buff_manager(&reader, tokens, labels)))
 		{
 			if (ret == -1)
 				print_system_error(errno);

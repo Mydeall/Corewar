@@ -6,13 +6,13 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/26 15:52:33 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/04/26 18:27:24 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/04/29 19:55:26 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-int		automate_syn(t_token *token,int state)
+static int		automate_syn(t_token *token,int state)
 {
 	int	i;
 	int	new_state;
@@ -20,14 +20,14 @@ int		automate_syn(t_token *token,int state)
 	i = -1;
 	while (++i < 12)
 	{
-		if ((token->lexem == g_index_col_syn[i]))
+		if (token->lexem == g_index_col_syn[i])
 			break ;
 	}
 	new_state = g_automate_syn[state][i];
 	return (new_state);
 }
 
-t_instr	*create_instruction(t_token *token)
+static t_instr	*create_instruction(t_token *token)
 {
 	t_instr *new;
 
@@ -52,18 +52,7 @@ t_instr	*create_instruction(t_token *token)
 	return (new);
 }
 
-int		print_syn_error(t_token *token, int state)
-{
-	(void)token;
-	(void)state;
-}
-int		print_len_error(t_token *token)
-{
-	(void)token;
-	return (1);
-}
-
-void	append_inst(t_instr **instructions, t_instr *instruction)
+static void	append_inst(t_instr **instructions, t_instr *instruction)
 {
 	t_instr	*current;
 
@@ -78,19 +67,18 @@ void	append_inst(t_instr **instructions, t_instr *instruction)
 	current->next = instruction;
 }	
 
-int		state_manager(t_instr **instructions, t_instr **instruction,
+static int		state_manager_parser(t_instr **instructions, t_instr **instruction,
 		t_token *token, int *state)
 {
-	int	ret;
 	int	tmp;
 	
 	tmp = *state;
-	if ((*state = automate_syn(token, state)) == -1)
+	if ((*state = automate_syn(token, *state)) == -1)
 		return (print_syn_error(token, *state));
 	if (*state == 1 || (*state == 3 && token->lexem == COMMENT))
 	{
-		if (ft_strlen(token->value) > state == 1 ? PROG_NAME_LENGTH
-				: COMMENT_LENGTH)
+		if ((int)ft_strlen(token->value) > (*state == 1 ? PROG_NAME_LENGTH
+				: COMMENT_LENGTH))
 			return (print_len_error(token));
 		if (!(*instruction = create_instruction(token)))
 			return (-1);
@@ -115,10 +103,10 @@ static void	complete_instruction(t_instr **instruction, t_token *token)
 {	
 	t_token	*current;	
 	
-	if (token->lexem != NAME || token->lexem != COMMENT || token->lexem != DIRECT\
-			|| token->lexem != REGISTER || token->lexem != INDIRECT)
+	if (token->lexem != NAME && token->lexem != COMMENT && token->lexem != DIRECT\
+			&& token->lexem != REGISTER && token->lexem != INDIRECT)
 	{
-		free_token(token);
+		free_token(&token);
 		return ;
 	}
 	token->next = NULL;
@@ -134,23 +122,39 @@ static void	complete_instruction(t_instr **instruction, t_token *token)
 	return ;
 }
 
-int		parser_asm(t_token **tokens, t_instr **instructions, t_label *labels)
+int		check_dup_label(t_token *token, t_token *labels)
+{
+	while (labels)
+	{
+		if (!ft_strcmp(token->value, labels->value))
+			if (token->col != labels->col || token->line != labels->line)
+				return (1);
+		labels = labels->next;
+	}
+	return (0);
+}			
+
+int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 {
 	t_token	*tmp;
 	t_instr	*instruction;
 	int		state;
 	int		ret;
 
+	(void)labels; //A UTILISER
+//	check_tokens(*tokens); //display
 	state = 0;
 	instruction = NULL;
 	while (*tokens)
 	{
 		tmp = (*tokens)->next;
-		if ((ret = state_manager(instructions, &instruction, *tokens,\
+		if ((*tokens)->lexem == LABEL && check_dup_label(*tokens, labels))
+			return (print_syn_error(*tokens, state));
+		if ((ret = state_manager_parser(instructions, &instruction, *tokens,\
 						&state)))
 			return (ret);
-		complete_instruction(instruction, *tokens);
+		complete_instruction(&instruction, *tokens);
 		*tokens = tmp;
-	}
+	}	
 	return (0);
 }

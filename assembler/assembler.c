@@ -6,52 +6,11 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/26 18:26:11 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/04/29 20:09:53 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
-
-void	check_tokens(t_token *tokens)
-{
-	int		i;
-
-	i = 0;
-	while (tokens)
-	{
-		printf("---token no %d:---\n", i);
-		printf("type = %d\n", tokens->lexem);
-		printf("value = %s\n", tokens->value);
-		i++;
-		tokens = tokens->next;
-	}
-}
-
-void	check_instructions(t_instr *instructions)
-{
-	int		i;
-	t_token	*current_token;
-
-	i = 0;
-	while (instructions)
-	{
-		printf("---instruction no %d:---\nopcode = %d\n", i, instructions->opcode);
-		current_token = instructions->params;
-		while (current_token)
-		{
-			if (current_token->lexem == DIRECT)
-				printf("DIRECT->");
-			if (current_token->lexem == INDIRECT)
-				printf("INDIRECT->");	
-			if (current_token->lexem == REGISTER)
-				printf("REGISTER->");
-		}
-		printf("\n");
-		instructions = instructions->next;
-		i++;
-	}
-}
-
 void	free_manager(t_token *tokens, t_instr *instructions)
 {
 	t_token	*tmp;
@@ -75,23 +34,25 @@ int		main(int ac, char **av)
 {
 	int		fd;
 	t_token	*tokens;
+	t_token *labels;
 	t_instr	*instructions;
 
 	tokens = NULL;
+	labels = NULL;
 	instructions = NULL;
 	if (ac < 2)
 		return(print_arg_error(1));
 	if ((fd = open(av[ac - 1], O_RDONLY)) == -1)
 		return (print_system_error(errno));
-	if (scanner_asm(fd, &tokens)
-	   	/*|| parser_asm(tokens, instructions) <= 0
-										|| !encoder_asm(instructions)  */)
+	if (scanner_asm(fd, &tokens, &labels)
+	   	|| parser_asm(&tokens, &instructions, labels)
+									/*	|| !encoder_asm(instructions)  */)
 	{
-		check_tokens(tokens);
+//		check_tokens(tokens);
 		free_manager(tokens, instructions);
 		return (1);
 	}
-	check_tokens(tokens);
+	check_instructions(instructions);
 	free_manager(tokens, instructions);
 	return(0);
 }	
