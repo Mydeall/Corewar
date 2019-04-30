@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/29 20:03:58 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/30 14:16:15 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	check_tokens(t_token *tokens)
 		printf("---token no %d:---\n", i);
 		printf("type = %d\n", tokens->lexem);
 		printf("value = %s\n", tokens->value);
+		printf("line = %d\n", tokens->line);
+		printf("col = %d\n", tokens->col);
 		i++;
 		tokens = tokens->next;
 	}

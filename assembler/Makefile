@@ -6,7 +6,7 @@
 #    By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 15:43:12 by ccepre            #+#    #+#              #
-#    Updated: 2019/04/29 19:57:43 by ccepre           ###   ########.fr        #
+#    Updated: 2019/04/30 12:13:17 by ccepre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = asm
 
 FLAGS = -Wall -Wextra -Werror
 
-LIB_PATH = ./
+LIB_PATH = ./other
 SRC_PATH = ./
 VIS_PATH = ./visualizer
 INC_PATH = ../includes

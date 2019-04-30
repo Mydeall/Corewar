@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 17:09:56 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/29 20:09:55 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/30 18:43:17 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 # include "libft.h"
 # include "op.h"
 
-# define BUFF_SIZE_ASM 1
+# define BUFF_SIZE_ASM 2048 
+# define BUFF_SIZE_W 2048
 
 typedef enum		e_lex
 {
@@ -57,6 +58,14 @@ typedef struct		s_reader
 	char			*rest;
 }					t_reader;
 
+typedef struct		s_writer
+{
+	char			buff[BUFF_SIZE_W];
+	size_t			cursor;
+	char			*output;
+	size_t			address;
+}					t_writer;
+
 typedef struct		s_instr
 {
 	int				opcode;
@@ -65,6 +74,15 @@ typedef struct		s_instr
 	struct s_instr	*next;
 }					t_instr;
 
+typedef struct		s_oper
+{
+	char	*inst;
+	int		opcode;
+	int		enc_byte;
+	int		dir_size;
+}
+
+extern t_oper g_op_tab[16];
 extern char	*(g_instructions[16]);
 extern char	*g_index_col_lex[12];
 extern int g_automate_lex[27][13];
@@ -76,9 +94,10 @@ int			scanner_asm(int fd, t_token **tokens, t_token **labels);
 
 int	create_value(t_token *token, t_reader *reader);
 
-void	free_manager(t_token *tokens, t_instr *instructions);
-int		complete_token(t_token *token, int state, t_reader *reader);
+void	free_manager(t_token *tokens, t_instr *instructions, t_token *labels);
 void	free_token(t_token **token);
+
+int		complete_token(t_token *token, int state, t_reader *reader);
 int		create_token(t_token **token, t_reader *reader, int start);
 int		append_token(t_token **tokens, t_token *token, int state, t_reader *reader);
 int		append_label(t_token *token, t_token **labels);
@@ -86,11 +105,13 @@ t_token	*get_back_token(t_token **tokens);
 
 int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels);
 
-int		print_lex_error(int line, int col);
 int		print_arg_error(int	error_id);
 int		print_system_error(int errnum);
-int		print_len_error(t_token *token);
+int		print_lex_error(int line, int col);
 int		print_syn_error(t_token *token, int state);
+int		print_len_error(t_token *token, int max);
+int		print_label_error(t_token *token, t_token *dup);
+int		print_int_error(t_token *token, int min, int max);
 
 int	strncmpchr(char *s1, char *s2, int n);
 int	ft_strnappend(char **str, char *ext, int n);

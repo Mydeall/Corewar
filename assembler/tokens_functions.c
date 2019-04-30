@@ -6,23 +6,23 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/29 20:09:54 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/30 14:56:06 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-int		create_token(t_token **token, t_reader *reader, int start)
+int		create_token(t_token **token, t_reader *reader, int shift)
 {
 	*token = NULL;
-	if (!reader->buff[start])
+	if (reader->cursor + shift == reader->nb_chars)
 		return (0);
 	if (!(*token = (t_token*)malloc(sizeof(t_token))))
 		return (1);
 	(*token)->lexem = NONE;
-	(*token)->value = reader->buff + start;
+	(*token)->value = &reader->buff[reader->cursor + shift];
 	(*token)->line = reader->state == 6 ? reader->line + 1 : reader->line;
-	(*token)->col = reader->state == 6 ? 1 : reader->col;
+	(*token)->col = reader->state == 6 ? 1 : reader->col + shift;
 	(*token)->address = 0;
 	(*token)->next = NULL;
 	return (0);
@@ -119,3 +119,13 @@ t_token	*get_back_token(t_token **tokens)
 	}
 	return (NULL);
 }
+/*
+printf("-------- create token ---------\n");
+	printf("reader->pointeur : |%c|\n", (reader->buff)[reader->cursor]);
+	printf("shift: |%d|\n", shift);
+	printf("start value : |%c|\n", reader->buff[reader->cursor + shift]);
+	printf("reader->line: |%d|\n", reader->line);
+	printf("reader->col: |%d|\n", reader->col);
+	printf("token->line: |%d|\n", (*token)->line);
+	printf("token->col: |%d|\n", (*token)->col);
+*/

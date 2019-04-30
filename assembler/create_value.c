@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/26 11:58:01 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/04/30 15:21:25 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,23 +44,20 @@ static int	verif_command(t_token *token)
 static int	verif_opcode(t_token *token, int len)
 {
 	int i;
-	int	ret;
 	int	ret_max;
 
 	i = -1;
 	ret_max = 0;
 	while (++i < 16)
 	{
-		ret = strncmpchr(token->value, g_instructions[i], len);
-		if (ret == -1)
+		if (!ft_strncmp(token->value, g_instructions[i], len))
 		{
 			if (!(token->value = ft_itoa(i + 1)))
 				return (-1);
 			return (0);
 		}
-		ret_max = ret > ret_max ? ret : ret_max;
 	}
-	return (print_lex_error(token->line, token->col + ret_max));
+	return (print_lex_error(token->line, token->col + len));
 }
 
 static int		trim_front_chars(t_token *token, t_reader *reader, int *len)
@@ -68,9 +65,11 @@ static int		trim_front_chars(t_token *token, t_reader *reader, int *len)
 	while (*(token->value) == '\t' || *(token->value) == ' '
 			|| *(token->value) == '%' || *(token->value) == '.')
 	{
+		if (*(token->value) == '\t')
+			token->col += 4;
+		if (*(token->value) == ' ')
+			token->col++;
 		(token->value)++;
-		if (*(token->value) == '\t' || *(token->value) == ' ')
-			(token->col)++;
 	}
 	if (token->lexem == REGISTER)
 		(token->value)++;

@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/29 19:51:11 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/30 15:04:29 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static int		state_manager_scan(t_token **tokens, t_token **token,\
 			return (ret);
 		if (append_label(*token, labels))
 			return (-1);
-		if ((create_token(token, reader, reader->cursor + 1)))
+		if ((create_token(token, reader, 1)))
 			return (-1);
 		reader->state = 0;
 	}
@@ -104,7 +104,8 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 			(reader->line)++;
 			reader->col = 0;
 		}
-		(reader->col)++;
+		reader->col = reader->buff[reader->cursor] == '\t' ? reader->col + 4 :
+			reader->col + 1;
 		(reader->cursor)++;
 	}
 	if (token && ft_strappend(&(reader->rest), token->value))
@@ -140,5 +141,6 @@ int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 	if ((ret = manage_last_token(&reader, tokens)))
 		return (ret);
 	ft_strdel(&(reader.rest));
+//	check_tokens(*tokens);
 	return (0);
 }

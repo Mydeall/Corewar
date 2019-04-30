@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/26 15:52:33 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/04/29 19:55:26 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/04/30 12:35:25 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,9 @@ static int		state_manager_parser(t_instr **instructions, t_instr **instruction,
 	
 	tmp = *state;
 	if ((*state = automate_syn(token, *state)) == -1)
-		return (print_syn_error(token, *state));
+		return (print_syn_error(token, tmp));
 	if (*state == 1 || (*state == 3 && token->lexem == COMMENT))
 	{
-		if ((int)ft_strlen(token->value) > (*state == 1 ? PROG_NAME_LENGTH
-				: COMMENT_LENGTH))
-			return (print_len_error(token));
 		if (!(*instruction = create_instruction(token)))
 			return (-1);
 		append_inst(instructions, *instruction);
@@ -122,15 +119,48 @@ static void	complete_instruction(t_instr **instruction, t_token *token)
 	return ;
 }
 
-int		check_dup_label(t_token *token, t_token *labels)
+int			verif_int(char *str, int min, int max, int size)
 {
-	while (labels)
+	int				len;
+	int				i;
+	long long int	nb;
+
+	i = *str == '-' ? 1 : 0;
+	while (str[i] == '0' && str[i])
+		i++;
+	i = str[i] == 0 ? i - 1 : i;
+	len = -1;
+	while (str[++len + i])
+		if (len > size)
+			return (1);
+	nb = ft_atoi(str);
+	if (nb >= min && nb <= max)
+		return (0);
+	return (1);
+}
+
+int		check_token(t_token *token, t_token *labels)
+{
+	int tmp;
+
+	if (token->lexem == COMMENT || token->lexem == NAME)
 	{
-		if (!ft_strcmp(token->value, labels->value))
-			if (token->col != labels->col || token->line != labels->line)
-				return (1);
-		labels = labels->next;
+		tmp = token->lexem == NAME ? PROG_NAME_LENGTH : COMMENT_LENGTH;
+		if ((int)ft_strlen(token->value) > tmp)
+			return (print_len_error(token, tmp));
 	}
+	else if (token->lexem == LABEL)
+		while (labels)
+		{
+			if (!ft_strcmp(token->value, labels->value))
+				if (token->col != labels->col || token->line != labels->line)
+					return (print_label_error(token, labels));
+			labels = labels->next;
+		}
+	else if (token->lexem == REGISTER)
+		if (verif_int(token->value, 1, 16, 2))
+			return (print_int_error(token, 1, 16));
+	//val direct / indiret non label check here ?
 	return (0);
 }			
 
@@ -141,15 +171,13 @@ int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 	int		state;
 	int		ret;
 
-	(void)labels; //A UTILISER
-//	check_tokens(*tokens); //display
 	state = 0;
 	instruction = NULL;
 	while (*tokens)
 	{
 		tmp = (*tokens)->next;
-		if ((*tokens)->lexem == LABEL && check_dup_label(*tokens, labels))
-			return (print_syn_error(*tokens, state));
+		if (check_token(*tokens, labels))
+			return (1);
 		if ((ret = state_manager_parser(instructions, &instruction, *tokens,\
 						&state)))
 			return (ret);
