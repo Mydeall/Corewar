@@ -6,7 +6,7 @@
 #    By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 15:43:12 by ccepre            #+#    #+#              #
-#    Updated: 2019/04/30 12:13:17 by ccepre           ###   ########.fr        #
+#    Updated: 2019/05/01 14:55:09 by rkirszba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,14 +28,17 @@ SRC_NAME = create_value.c\
 		   parser.c\
 		   tokens_functions.c\
 		   display.c\
-		   free_functions.c
+		   free_functions.c\
+		   encoder.c\
+		   encoder_functions.c\
+		   writer.c
 
 INC_NAME = asm.h \
 		   get_next_line.h \
 		   ft_printf.h \
 		   libft.h
 
-LIB_NAME = libftprintf.a
+LIB_NAME = libft.a
 
 SRC = $(addprefix $(SRC_PATH)/, $(SRC_NAME))
 #INC = $(addprefix $(INC_PATH)/, $(INC_NAME))

@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 14:56:06 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/01 13:43:29 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,34 @@ int		append_label(t_token *token, t_token **labels)
 	return (0);
 }
 
+
+int		append_queue(t_token **queue, t_token *token)
+{
+	t_token	*new;
+	t_token	*current;
+
+	if (!(new = (t_token*)malloc(sizeof(t_token))))
+		return (1);
+	if (!(new->value = ft_strdup(token->value)))
+	{
+		free(new);
+		return (1);
+	}
+	new->lexem = token->lexem;
+	new->address = token->address;
+	new->next = NULL;
+	if (!(*queue))
+	{
+		*queue = new;
+		return (0);
+	}
+	current = *queue;
+	while (current->next)
+		current = current->next;
+	current->next = new;
+	return (0);
+}
+
 t_token	*get_back_token(t_token **tokens)
 {
 	t_token *current;
@@ -119,6 +147,7 @@ t_token	*get_back_token(t_token **tokens)
 	}
 	return (NULL);
 }
+
 /*
 printf("-------- create token ---------\n");
 	printf("reader->pointeur : |%c|\n", (reader->buff)[reader->cursor]);

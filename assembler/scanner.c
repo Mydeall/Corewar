@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 15:04:29 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/01 13:46:55 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,7 +133,7 @@ int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 		if ((ret = buff_manager(&reader, tokens, labels)))
 		{
 			if (ret == -1)
-				print_system_error(errno);
+				print_sys_error(errno);
 			ft_strdel(&(reader.rest));
 			return (ret);
 		}

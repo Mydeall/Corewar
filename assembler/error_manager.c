@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:46:55 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 15:23:14 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/01 13:15:44 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		print_arg_error(int	error_id)
 	return (1);
 }
 
-int		print_system_error(int errnum)
+int		print_sys_error(int errnum)
 {
 	printf("System error : %s\n", strerror(errnum));
 	return (-1);

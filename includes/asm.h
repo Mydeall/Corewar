@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 17:09:56 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 20:10:46 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/01 14:57:28 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ typedef struct		s_oper
 	int		opcode;
 	int		enc_byte;
 	int		dir_size;
-}
+}					t_oper;
 
 extern t_oper g_op_tab[16];
 extern char	*(g_instructions[16]);
@@ -90,11 +90,13 @@ extern int g_automate_syn[47][9];
 extern t_lex g_index_col_syn[9];
 extern t_lex g_index_col_syn[9];
 
+int			write_output(t_writer *writer, char *file_name);
 int			scanner_asm(int fd, t_token **tokens, t_token **labels);
 
 int	create_value(t_token *token, t_reader *reader);
 
 void	free_manager(t_token *tokens, t_instr *instructions, t_token *labels);
+void	free_tokens(t_token **tokens);
 void	free_token(t_token **token);
 
 int		complete_token(t_token *token, int state, t_reader *reader);
@@ -106,7 +108,7 @@ t_token	*get_back_token(t_token **tokens);
 int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels);
 
 int		print_arg_error(int	error_id);
-int		print_system_error(int errnum);
+int		print_sys_error(int errnum);
 int		print_lex_error(int line, int col);
 int		print_syn_error(t_token *token, int state);
 int		print_len_error(t_token *token, int max);
@@ -122,4 +124,16 @@ void		check_instructions(t_instr *instructions);
 void		print_lexem(t_lex lexem);
 void		print_token(t_token *token);
 
+void		int_to_bytes(char *str, unsigned int nb, size_t size);
+int			write_into_buffer(t_writer *writer, unsigned int nb, size_t size);
+int			write_text(t_writer *writer, char *text, size_t len);
+int			concat_output(t_writer *writer);
+
+int		encoder_asm(t_instr *instructions, t_token *labels, char *file_name);
+void	replace_label_value(t_writer *writer, t_token *labels, t_token *queue);
+int		give_size_param(int opcode, t_lex lexem);
+void	complete_labels(t_writer *writer, char *label, t_token *labels);
+
+int		append_queue(t_token **queue, t_token *token);
+int		ft_power(int nb, int pow);
 #endif

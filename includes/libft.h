@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fnussbau <fnussbau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:02:53 by fnussbau          #+#    #+#             */
-/*   Updated: 2019/02/19 16:47:41 by malluin          ###   ########.fr       */
+/*   Updated: 2019/05/01 14:49:19 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,4 +117,5 @@ void				ft_pswap(char **s1, char **s2);
 long long			ft_llpower(long long nb, int power);
 int					ft_numlen(int n);
 char				*ft_strdup_to(char *str, char c);
+int					ft_power(int nb, int pow);
 #endif

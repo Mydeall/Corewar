@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:46:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 15:47:25 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/01 12:56:08 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,24 @@ void	free_instruction(t_instr **instruction)
 	*instruction = NULL;
 }
 
+void	free_tokens(t_token **tokens)
+{
+	t_token	*tmp;
 
+	while (*tokens)
+	{
+		tmp = *tokens;
+		*tokens = (*tokens)->next;
+		free_token(&tmp);
+	}
+	*tokens = NULL;
+}
 void	free_manager(t_token *tokens, t_instr *instructions, t_token *labels)
 {
 	t_token	*tmp;
 	t_instr	*tmp2;
 
-	while (tokens)
-	{
-		tmp = tokens;
-		tokens = tokens->next;
-		free_token(&tmp);
-	}
+	free_tokens(&tokens);
 	while (labels)
 	{
 		tmp = labels;
