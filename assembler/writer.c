@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:54:10 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/01 16:59:03 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/02 18:24:56 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,48 @@ int		write_text(t_writer *writer, char *text, size_t len)
 
 	i = -1;
 	while (text[++i] && i < (int)len)
-		if (write_into_buffer(writer, text[i], 1 * 8))
+		if (write_into_buffer(writer, text[i], 1))
 			return (1);
 	i = -1;
 	while (++i < (int)len)
-		if (write_into_buffer(writer, 0, 1 * 8))
+		if (write_into_buffer(writer, 0, 1))
 			return (1);	
 	return (0);
 }
 
 int		concat_output(t_writer *writer)
 {
-	if (ft_strnappend(&(writer->output), writer->buff,\
-			writer->cursor + 1))
-		return (1);
+	int i;
+
+	i = -1;
+	printf("********\n********\n********\n");
+	while (++i < (int)writer->cursor)
+		printf("buff char %d : %d\n", i, writer->buff[i]);
+	printf("realloc \n");
+	if (!writer->output)
+	{
+		if (!(writer->output = (char*)malloc(writer->cursor)))
+			return (1);
+	}
+	else
+		if (!(writer->output = (char*)realloc(writer->output,
+						writer->address + writer->cursor)))
+			return (1);
+	printf("realloc done\n");
+	printf("adress : %zu | curosr : %zu\n", writer->address , writer->cursor);
+	i = -1;
+	while (++i < (int)writer->cursor)
+	{
+		printf("char %d : %d\n", i, writer->buff[i]);
+		writer->output[writer->address++] = writer->buff[i];
+	}
+	printf("cp done\n");
 	writer->cursor = 0;
+	printf("********\n********\n********\n");
 	return (0);
 }
 
+/*
 void	int_to_bytes(char *str, unsigned int nb, size_t size)
 {
 	unsigned long int max;
@@ -64,22 +88,45 @@ void	int_to_bytes(char *str, unsigned int nb, size_t size)
 	}
 	printf("\n");
 }
+*/
+
+void	insert_value(char *str, unsigned int value, int size)
+{
+	int i;
+	
+	i = -1;
+	while (++i < size)
+	{
+		str[i] = value >> (size * 8 - (i + 1) * 8) & 0xFF;
+		printf("char : %d\n", (unsigned char)str[i]);
+	}
+}
 
 int		write_into_buffer(t_writer *writer, unsigned int nb, size_t size)
 {
+	int i;
+
 	printf("-------- WRITE BUFF ------\n");
 	printf("size : %zu\n", size);
 	printf("cursor : %zu\n", writer->cursor);
-	if (BUFF_SIZE_W - writer->cursor + 1 < size)
+	printf("BUFF size: %d\n", BUFF_SIZE_W);
+	printf("compute : %lu\n", BUFF_SIZE_W - (writer->cursor + 1));
+	if (BUFF_SIZE_W - (writer->cursor + 1) < size)
+	{
+		printf("stop -> concat\n");
 		if (concat_output(writer))
-			return (print_sys_error(errno));
+			return (1);
+	}
 	printf("cursor : %zu\n", writer->cursor);
-	int_to_bytes(&(writer->buff[writer->cursor]), nb, size);
+	insert_value(&(writer->buff[writer->cursor]), nb, size);
+	printf("nb : %d | size = %zu\n", nb, size);
+	i = -1;
+	while (++i < (int)size)
+		printf("buff char %d : %d\n", i, writer->buff[writer->cursor + i]);
 	writer->cursor += size;
-	writer->address += size / 8;
 	printf("cursor : %zu\n", writer->cursor);
 //	write (1, writer->buff, (int)writer->cursor);
 //	printf("\n");
-	printf("buff :\n%.*s\n", (int)writer->cursor, writer->buff);
+//	printf("buff :\n%.*s\n", (int)writer->cursor, writer->buff);
 	return (0);
 }

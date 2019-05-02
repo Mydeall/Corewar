@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/01 16:58:59 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/02 18:24:55 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,12 @@ int			write_output(t_writer *writer, char *file_name)
 {
 	int i;
 	int fd;
-	int test;
-	unsigned char *c;
 
+	i = -1;
+//	while (++i < (int)writer->address)
+//		printf("output char %d : %d\n", i, writer->output[i]);
+//	while (writer->output[++i])
+//		printf("%x ", (unsigned char)(writer->output[i]));
 	i = -1;
 	while (file_name[++i])
 		if (file_name[i] == '.')
@@ -41,18 +44,12 @@ int			write_output(t_writer *writer, char *file_name)
 	file_name[i] = 0;
 	if (!(file_name = ft_strjoin(file_name, ".cor")))
 		return (1);
-	printf("TEEEEEEEEEST\n");
 	if ((fd = open(file_name, O_CREAT | O_WRONLY)) == -1)
-		return (1);
-	i = -1;
-	test = 5892;
-	while (++i < (int)(writer->address * 8))
-	{
-		c = (void*)&test;
-		write(fd,&c, 4);
-	}
-//	write(fd, writer->output, writer->address * 8);
+		return (1); // free file_name
+	printf("address : %zu\n", writer->address);
+	write(fd, writer->output, writer->address);
 	printf("writing output\n");
+	ft_strdel(&file_name);
 	return (0);
 }
 

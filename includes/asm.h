@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 17:09:56 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/01 14:57:28 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/02 16:22:40 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct		s_token
 	char			*value;
 	int				line;
 	int				col;
+	int				size;
 	int				address;
 	struct s_token	*next;
 }					t_token;
@@ -124,7 +125,7 @@ void		check_instructions(t_instr *instructions);
 void		print_lexem(t_lex lexem);
 void		print_token(t_token *token);
 
-void		int_to_bytes(char *str, unsigned int nb, size_t size);
+void		insert_value(char *str, unsigned int value, int size);
 int			write_into_buffer(t_writer *writer, unsigned int nb, size_t size);
 int			write_text(t_writer *writer, char *text, size_t len);
 int			concat_output(t_writer *writer);
