@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:54:10 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/02 18:24:56 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/02 19:39:19 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		write_text(t_writer *writer, char *text, size_t len)
 	while (text[++i] && i < (int)len)
 		if (write_into_buffer(writer, text[i], 1))
 			return (1);
-	i = -1;
+	i--;
 	while (++i < (int)len)
 		if (write_into_buffer(writer, 0, 1))
 			return (1);	

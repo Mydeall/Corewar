@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 15:55:02 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/02 18:24:57 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/02 19:39:20 by rkirszba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 static int	write_header(t_instr **instructions, t_writer *writer)
 {
-	int		i;
-
 	if (write_into_buffer(writer, COREWAR_EXEC_MAGIC, 4))
 		return (1);
    	if (write_text(writer, (*instructions)->params->value, PROG_NAME_LENGTH))
@@ -23,10 +21,8 @@ static int	write_header(t_instr **instructions, t_writer *writer)
 	*instructions = (*instructions)->next;
 	if (write_into_buffer(writer, 0, 4))
 	   return (1);
-	i = -1;
 	if (write_into_buffer(writer, 0, 4))
 		return (1);
-	printf("********\n*********\n*********\ncommentaire = |%s|\n********\n********\n********\n", (*instructions)->params->value);
    	if (write_text(writer, (*instructions)->params->value, COMMENT_LENGTH))
 		return (1);
 	*instructions = (*instructions)->next;
