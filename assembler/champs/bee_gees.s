@@ -3,7 +3,7 @@
 
 	sti r1, %:live, r1			;change live by the right value
 sti	r1, %:live2, %1			;change live by the right value
-fork r1
+
 ld	%1, r3
 ld	%33, r6
 #While (r2 < 10)

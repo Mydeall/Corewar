@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 13:38:12 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/02 18:24:57 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 14:11:50 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	complete_labels(t_writer *writer, char *label, t_token *labels)
 	{
 		if (!(ft_strcmp(label, labels->value)))
 		{
-			labels->address = writer->address + writer->cursor;
+			labels->inst_address = writer->address + writer->cursor;
 			break ;
 		}
 		labels = labels->next;
@@ -38,14 +38,19 @@ void	replace_label_value(t_writer *writer, t_token *labels, t_token *queue)
 {
 	t_token	*current_label;
 
+	printf("replace label\n");
 	while (queue)
 	{
 		current_label = labels;		
 		while (current_label\
 			&& ft_strcmp(queue->value + 1, current_label->value))
 			current_label = current_label->next;
+		printf("label address: %d\n", current_label->inst_address);
+		printf("queue adresses : %d\n", queue->inst_address);
+		printf("Diff d adresses : %u\n", (unsigned int)(current_label->inst_address - queue->inst_address));
+		printf("Diff aueue->size : %d\n", queue->size);
 		insert_value(&(writer->output[queue->address]),
-					(unsigned int)(current_label->address - queue->address), 
+					(unsigned int)(current_label->inst_address - queue->inst_address), 
 					queue->size);
 		queue = queue->next;
 	}

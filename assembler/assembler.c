@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/02 19:39:21 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/03 14:28:44 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,23 +33,17 @@ int			write_output(t_writer *writer, char *file_name)
 	int fd;
 
 	i = -1;
-//	while (++i < (int)writer->address)
-//		printf("output char %d : %d\n", i, writer->output[i]);
-//	while (writer->output[++i])
-//		printf("%x ", (unsigned char)(writer->output[i]));
-	i = -1;
 	while (file_name[++i])
 		if (file_name[i] == '.')
 			break ;
 	file_name[i] = 0;
 	if (!(file_name = ft_strjoin(file_name, ".cor")))
 		return (1);
-	if ((fd = open(file_name, O_RDWR | O_CREAT | O_TRUNC, S_IRWXU)) == -1)
+	if ((fd = open(file_name, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR)) == -1)
 	{
-		printf("PROB POUR CREATION FICHIER\n");
-		return (1); // free file_name
+		ft_strdel(&file_name);
+		return (1);
 	}
-	printf("address : %zu\n", writer->address);
 	write(fd, writer->output, writer->address);
 	printf("writing output\n");
 	ft_strdel(&file_name);

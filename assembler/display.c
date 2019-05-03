@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 14:16:15 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 16:48:47 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,28 @@ void	check_instructions(t_instr *instructions)
 		instructions = instructions->next;
 		i++;
 	}
+}
+
+void	print_tokens(t_token *tokens)
+{
+	int i;
+	t_token *current;
+
+	current = tokens;
+	i = 0;
+	while (current)
+	{
+		printf("token %d : %p\n", i, current);
+		current = current->next;
+		if (current && current == current->next)
+		{
+			printf("token %d : %p\n", i + 1, current->next);
+			printf("boucle\n");
+			break ;
+		}
+		i++;
+	}
+
 }
 
 void	print_lexem(t_lex lexem)

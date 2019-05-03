@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/04/30 15:21:25 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 12:51:31 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ static int		trim_front_chars(t_token *token, t_reader *reader, int *len)
 	*len = reader->rest ? ft_strlen(token->value)\
 		  : reader->buff + reader->cursor - token->value + 1;
 	if (token->value[*len - 1] == ':' || token->value[*len - 1] == '\"')
-		len--;
+		(*len)--;
 	return (0);
 }
 

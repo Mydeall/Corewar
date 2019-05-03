@@ -1,0 +1,6394 @@
+nb_chars = 130
+cursor = 0
+shift = 0
+nb_chars = 130
+cursor = 23
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 24
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 72
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 73
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 74
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 79
+shift = 1
+new : 0x100b631c0
+nb_chars = 130
+cursor = 83
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 86
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 87
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 90
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 91
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 94
+shift = 1
+new : 0x0
+nb_chars = 130
+cursor = 129
+shift = 1
+condition chelou
+new : 0x0
+---token no 0:---
+type = 22
+value = (null)
+line = 4
+col = 1
+---token no 1:---
+type = 23
+value = (null)
+line = 4
+col = 10
+---token no 2:---
+type = 25
+value = 8
+line = 4
+col = 14
+---token no 3:---
+type = 13
+value = 15
+line = 4
+col = 17
+---token no 4:---
+type = 25
+value = 1
+line = 4
+col = 22
+-------- WRITE BUFF ------
+size : 4
+nb : 15369203 | size = 4
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 108 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 118 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 101 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 116 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 121 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 110 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 32 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 108 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 118 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 101 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 4
+nb : 0 | size = 4
+-------- WRITE BUFF ------
+size : 4
+nb : 0 | size = 4
+-------- WRITE BUFF ------
+size : 1
+nb : 72 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 44 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 32 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 72 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 44 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 32 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 72 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 44 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 32 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 115 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 116 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 121 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 110 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 32 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 97 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 108 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 105 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 118 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 101 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE BUFF ------
+size : 1
+nb : 0 | size = 1
+-------- WRITE 

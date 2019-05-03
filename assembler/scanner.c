@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/01 13:46:55 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/03 17:10:56 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,26 @@ static int		automate(char c, int state)
 	return (new_state);
 }
 
+static int	token_manager(t_token **token, t_token **tokens, t_reader *reader,\
+		t_token **labels)
+{
+	t_token *new;
+
+	append_token(tokens, *token);
+	if (*token && (*token)->lexem == LABEL)
+	{
+		print_token(*token);
+		if (!(new = copy_token(*token)))
+			return (1);
+		append_token(labels, new);
+	}
+	*token = NULL;
+	if (reader->cursor + 1 != reader->nb_chars)
+		if (!(*token = create_token(&(reader->buff[reader->cursor + 1]), reader, 1)))
+			return (1);
+	return (0);
+}
+
 static int		state_manager_scan(t_token **tokens, t_token **token,\
 		t_reader *reader, t_token **labels)
 {
@@ -48,13 +68,12 @@ static int		state_manager_scan(t_token **tokens, t_token **token,\
 			(reader->cursor)--;
 			(reader->col)--;
 		}
-		if ((ret = append_token(tokens, *token, reader->state, reader)))
+		if ((ret = complete_token(*token, reader->state, reader)))
 			return (ret);
-		if (append_label(*token, labels))
-			return (-1);
-		if ((create_token(token, reader, 1)))
+		if (token_manager(token, tokens, reader, labels))
 			return (-1);
 		reader->state = 0;
+		check_tokens(*tokens);
 	}
 	return (0);
 }
@@ -92,8 +111,9 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 	int			ret;
 
 	if (!(token = get_back_token(tokens)))
-		if ((create_token(&token, reader, 0)))
-			return (-1);
+		if (reader->cursor != reader->nb_chars)
+			if (!(token = create_token(&(reader->buff[reader->cursor]), reader, 0)))
+				return (-1);
 	while (reader->cursor < reader->nb_chars)
 	{
 		reader->state = automate(reader->buff[reader->cursor], reader->state);
@@ -110,8 +130,12 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 	}
 	if (token && ft_strappend(&(reader->rest), token->value))
 		return (-1);
-	if (token && (ret = append_token(tokens, token, reader->state, reader)))
-		return (ret);
+	if (token) //verif
+	{
+		if ((ret = complete_token(token, reader->state, reader)))
+			return (ret);
+		append_token(tokens, token);
+	}
 	return (0);
 }
 
@@ -141,6 +165,6 @@ int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 	if ((ret = manage_last_token(&reader, tokens)))
 		return (ret);
 	ft_strdel(&(reader.rest));
-//	check_tokens(*tokens);
+	check_tokens(*labels);
 	return (0);
 }
