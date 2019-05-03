@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 16:48:47 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:13:51 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	check_instructions(t_instr *instructions)
 		if (instructions->opcode == 0)
 			printf("name | comment token\n");
 		else
-			printf("opcode = %s\n", g_instructions[instructions->opcode - 1]);
+			printf("opcode = %s\n", g_op_tab[instructions->opcode - 1].inst);
 		current_token = instructions->params;
 		while (current_token)
 		{

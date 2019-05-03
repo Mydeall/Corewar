@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 17:10:51 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:19:04 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int		complete_token(t_token *token, int state, t_reader *reader)
 {
 	int		ret;
 
+	printf("-------- complete -------\n");
+//	print_token(token);
 	if (g_automate_lex[state][0] == -2 || g_automate_lex[state][0] == -3)
 	{
 		token->lexem = state;
@@ -42,6 +44,7 @@ int		complete_token(t_token *token, int state, t_reader *reader)
 	}
 	else
 		token->value = reader->buff;
+	printf("-------------------------\n");
 	return (0);
 }
 
@@ -65,7 +68,7 @@ void	append_token(t_token **tokens, t_token *token)
 t_token	*copy_token(t_token *token)
 {
 	t_token *new;
-
+//
 	if (!(new = (t_token*)malloc(sizeof(t_token))))
 		return (NULL);
 	if (!(new->value = ft_strdup(token->value)))

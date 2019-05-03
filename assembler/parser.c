@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/26 15:52:33 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/04/30 12:35:25 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:29:34 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,9 +139,35 @@ int			verif_int(char *str, int min, int max, int size)
 	return (1);
 }
 
+int		check_label(t_token *token, t_token *labels)
+{
+	if (token->lexem == LABEL)
+	{
+		while (labels)
+		{
+			if (!ft_strcmp(token->value, labels->value))
+				if (token->col != labels->col || token->line != labels->line)
+					return (print_dup_label_error(token, labels));
+			labels = labels->next;
+		}
+	}
+	else if (*(token->value) == ':')
+	{
+		while (labels)
+		{
+			if (!ft_strcmp(token->value + 1, labels->value))
+				break;
+			labels = labels->next;
+		}
+		if (!labels)
+			return (print_label_error(token));
+	}
+	return (0);
+}
+
 int		check_token(t_token *token, t_token *labels)
 {
-	int tmp;
+	int 	tmp;
 
 	if (token->lexem == COMMENT || token->lexem == NAME)
 	{
@@ -149,18 +175,14 @@ int		check_token(t_token *token, t_token *labels)
 		if ((int)ft_strlen(token->value) > tmp)
 			return (print_len_error(token, tmp));
 	}
-	else if (token->lexem == LABEL)
-		while (labels)
-		{
-			if (!ft_strcmp(token->value, labels->value))
-				if (token->col != labels->col || token->line != labels->line)
-					return (print_label_error(token, labels));
-			labels = labels->next;
-		}
 	else if (token->lexem == REGISTER)
+	{
 		if (verif_int(token->value, 1, 16, 2))
 			return (print_int_error(token, 1, 16));
-	//val direct / indiret non label check here ?
+	}
+	else if (token->lexem == LABEL || *(token->value) == ':')
+		if (check_label(token, labels))
+			return (1);
 	return (0);
 }			
 

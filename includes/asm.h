@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 17:09:56 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/02 19:39:18 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/03 17:42:06 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ typedef struct		s_token
 	int				col;
 	int				size;
 	int				address;
+	int				inst_address;
 	struct s_token	*next;
 }					t_token;
 
@@ -103,9 +104,9 @@ void	free_tokens(t_token **tokens);
 void	free_token(t_token **token);
 
 int		complete_token(t_token *token, int state, t_reader *reader);
-int		create_token(t_token **token, t_reader *reader, int start);
-int		append_token(t_token **tokens, t_token *token, int state, t_reader *reader);
-int		append_label(t_token *token, t_token **labels);
+t_token	*create_token(char *token, t_reader *reader, int shift);
+void	append_token(t_token **tokens, t_token *token);
+t_token	*copy_token(t_token *token);
 t_token	*get_back_token(t_token **tokens);
 
 int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels);
@@ -115,7 +116,8 @@ int		print_sys_error(int errnum);
 int		print_lex_error(int line, int col);
 int		print_syn_error(t_token *token, int state);
 int		print_len_error(t_token *token, int max);
-int		print_label_error(t_token *token, t_token *dup);
+int		print_dup_label_error(t_token *token, t_token *dup);
+int		print_label_error(t_token *token);
 int		print_int_error(t_token *token, int min, int max);
 
 int	strncmpchr(char *s1, char *s2, int n);
@@ -126,6 +128,7 @@ void		check_tokens(t_token *tokens);
 void		check_instructions(t_instr *instructions);
 void		print_lexem(t_lex lexem);
 void		print_token(t_token *token);
+void		print_tokens(t_token *tokens);
 
 void		insert_value(char *str, unsigned int value, int size);
 int			write_into_buffer(t_writer *writer, unsigned int nb, size_t size);
@@ -137,6 +140,5 @@ void	replace_label_value(t_writer *writer, t_token *labels, t_token *queue);
 int		give_size_param(int opcode, t_lex lexem);
 void	complete_labels(t_writer *writer, char *label, t_token *labels);
 
-int		append_queue(t_token **queue, t_token *token);
 int		ft_power(int nb, int pow);
 #endif

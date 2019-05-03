@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:46:55 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/01 13:15:44 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/03 17:42:09 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,18 @@ int		print_sys_error(int errnum)
 	return (-1);
 }
 
-int		print_label_error(t_token *token, t_token *dup)
+int		print_dup_label_error(t_token *token, t_token *dup)
 {
 	printf("Syn error : duplicate label line : %d, col : %d\n",\
 			dup->line, dup->col);
 	printf("First definition line : %d, col : %d\n", token->line, token->col);
+	return (1);
+}
+
+int		print_label_error(t_token *token)
+{
+	printf("Syn error : undeclared label line : %d, col : %d\n",\
+			token->line, token->col);
 	return (1);
 }
 

@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 12:51:31 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:13:05 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static int	verif_opcode(t_token *token, int len)
 	ret_max = 0;
 	while (++i < 16)
 	{
-		if (!ft_strncmp(token->value, g_instructions[i], len))
+		if (!ft_strncmp(token->value, g_op_tab[i].inst, len))
 		{
 			if (!(token->value = ft_itoa(i + 1)))
 				return (-1);

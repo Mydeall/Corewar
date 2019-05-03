@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 17:10:56 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 17:57:26 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ static int		state_manager_scan(t_token **tokens, t_token **token,\
 		if (token_manager(token, tokens, reader, labels))
 			return (-1);
 		reader->state = 0;
-		check_tokens(*tokens);
 	}
 	return (0);
 }
@@ -83,6 +82,7 @@ int			manage_last_token(t_reader *reader, t_token **tokens)
 	t_token *token;
 	int		ret;
 	
+	printf("manage last token\n");
 	token = *tokens;
 	while (token->next)
 		token = token->next;

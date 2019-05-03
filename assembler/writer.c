@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:54:10 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/03 14:59:45 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:32:34 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,26 +58,10 @@ void	insert_value(char *str, unsigned int value, int size)
 
 int		write_into_buffer(t_writer *writer, unsigned int nb, size_t size)
 {
-//	int i;
-
-	printf("-------- WRITE BUFF ------\n");
-	printf("size : %zu\n", size);
-//	printf("cursor : %zu\n", writer->cursor);
-//	printf("BUFF size: %d\n", BUFF_SIZE_W);
-//	printf("compute : %lu\n", BUFF_SIZE_W - (writer->cursor + 1));
 	if (BUFF_SIZE_W - (writer->cursor + 1) < size)
-	{
-		printf("stop -> concat\n");
 		if (concat_output(writer))
 			return (1);
-	}
-//	printf("cursor : %zu\n", writer->cursor);
 	insert_value(&(writer->buff[writer->cursor]), nb, size);
-	printf("nb : %d | size = %zu\n", nb, size);
 	writer->cursor += size;
-//	printf("cursor : %zu\n", writer->cursor);
-//	write (1, writer->buff, (int)writer->cursor);
-//	printf("\n");
-//	printf("buff :\n%.*s\n", (int)writer->cursor, writer->buff);
 	return (0);
 }

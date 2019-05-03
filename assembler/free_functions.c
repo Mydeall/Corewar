@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:46:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 12:46:28 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/03 18:03:17 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	free_token(t_token **token)
 {
-	ft_strdel(&(*token)->value);
+	if ((*token)->value)
+		ft_strdel(&(*token)->value);
 	free(*token);
 	*token = NULL;
 }
