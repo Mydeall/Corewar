@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 18:13:05 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 16:40:40 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ int	create_value(t_token *token, t_reader *reader)
 	if (token->lexem == OPCODE)
 	{
 		ret = verif_opcode(token, len);
+		printf("if opcode\n");
 		ft_strdel(&(reader->rest));
 		return (ret);
 	}
