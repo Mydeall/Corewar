@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/26 15:52:33 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/03 18:29:34 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 19:57:05 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -195,6 +195,7 @@ int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 
 	state = 0;
 	instruction = NULL;
+	check_tokens(*tokens);
 	while (*tokens)
 	{
 		tmp = (*tokens)->next;
@@ -204,7 +205,9 @@ int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 						&state)))
 			return (ret);
 		complete_instruction(&instruction, *tokens);
+		if (!tmp && state != 4)
+			ret = print_syn_error(tmp, state);
 		*tokens = tmp;
-	}	
-	return (0);
+	}
+	return (ret ? ret : 0);
 }

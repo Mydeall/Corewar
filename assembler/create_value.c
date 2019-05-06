@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 15:08:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 16:40:40 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 19:57:04 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,13 +74,8 @@ static int		trim_front_chars(t_token *token, t_reader *reader, int *len)
 	if (token->lexem == REGISTER)
 		(token->value)++;
 	if (token->lexem == COMMENT)
-	{
 		if (verif_command(token))
-		{
-			ft_strdel(&(reader->rest));
 			return (1);
-		}
-	}
 	*len = reader->rest ? ft_strlen(token->value)\
 		  : reader->buff + reader->cursor - token->value + 1;
 	if (token->value[*len - 1] == ':' || token->value[*len - 1] == '\"')
@@ -105,13 +100,9 @@ int	create_value(t_token *token, t_reader *reader)
 	if (token->lexem == OPCODE)
 	{
 		ret = verif_opcode(token, len);
-		printf("if opcode\n");
-		ft_strdel(&(reader->rest));
 		return (ret);
 	}
 	if (!(token->value = ft_strsub(token->value, 0, len)))
 		return (-1);
-	if (reader->rest)
-		ft_strdel(&(reader->rest));
 	return (0);
 }

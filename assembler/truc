@@ -1,0 +1,398 @@
+-------- complete -------
+type = 
+value = |.name "bigzork"
+.comment "I know i cant win"
+
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [NAME]
+value = |bigzork|
+-------------------------
+-------- complete -------
+type = 
+value = |
+.comment "I know i cant win"
+
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |.comment "I know i cant win"
+
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [COMMENT]
+value = |I know i cant win|
+-------------------------
+-------- complete -------
+type = 
+value = |
+
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |2|
+-------------------------
+-------- complete -------
+type = 
+value = | %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [DIRECT]
+value = |0|
+-------------------------
+-------- complete -------
+type = 
+value = |, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [COMMA]
+value = |,|
+-------------------------
+-------- complete -------
+type = 
+value = | r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [REGISTER]
+value = |2|
+-------------------------
+-------- complete -------
+type = 
+value = |
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |3|
+-------------------------
+-------- complete -------
+type = 
+value = | r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [REGISTER]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = |, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [COMMA]
+value = |,|
+-------------------------
+-------- complete -------
+type = 
+value = | 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [INDIRECT]
+value = |211|
+-------------------------
+-------- complete -------
+type = 
+value = |
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [LABEL]
+value = |loop|
+-------------------------
+type = [LABEL]
+value = |loop|
+-------- complete -------
+type = 
+value = | live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = | %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [DIRECT]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = |
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |9|
+-------------------------
+-------- complete -------
+type = 
+value = | %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [DIRECT]
+value = |:loop|
+-------------------------
+-------- complete -------
+type = 
+value = |
+live %1
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |live %1
+lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |live %1
+lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = | %1
+lldi :loop, %:loop,r1
+test|
+type = [DIRECT]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = |
+lldi :loop, %:loop,r1
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+-------- complete -------
+type = 
+value = |lldi :loop, %:loop,r1
+test|
+opcode : 
+type = [OPCODE]
+value = |lldi :loop, %:loop,r1
+test|
+type = [OPCODE]
+value = |14|
+-------------------------
+-------- complete -------
+type = 
+value = | :loop, %:loop,r1
+test|
+type = [INDIRECT]
+value = |:loop|
+-------------------------
+-------- complete -------
+type = 
+value = |, %:loop,r1
+test|
+type = [COMMA]
+value = |,|
+-------------------------
+-------- complete -------
+type = 
+value = | %:loop,r1
+test|
+type = [DIRECT]
+value = |:loop|
+-------------------------
+-------- complete -------
+type = 
+value = |,r1
+test|
+type = [COMMA]
+value = |,|
+-------------------------
+-------- complete -------
+type = 
+value = |r1
+test|
+type = [REGISTER]
+value = |1|
+-------------------------
+-------- complete -------
+type = 
+value = |
+test|
+type = [CARRIAGE RETURN]
+value = |
+|
+-------------------------
+reader->rest : |(null)|
+token->value : |test|
+&(reader->buff[reader->cursor]) : ||
+manage last token
+-------- complete -------
+type = 
+value = |.name "bigzork"
+.comment "I know i cant win"
+
+ld %0, r2
+st r1, 211
+loop: live %1
+zjmp %:loop
+live %1
+lldi :loop, %:loop,r1
+test|
+reader->rest
+opcode : 
+type = [OPCODE]
+value = |tes|
+erreur dans verif opcode
+lexical error : line 10, col 4

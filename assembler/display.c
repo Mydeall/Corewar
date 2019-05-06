@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 18:13:51 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 18:40:23 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	print_token(t_token *token)
 {
-	printf("type = %d\n", token->lexem);
+	printf("type = ");
+	print_lexem(token->lexem);
+	printf("\n");
 	printf("value = |%s|\n", token->value);
 }
 

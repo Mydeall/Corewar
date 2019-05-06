@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 18:19:04 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 19:57:05 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,20 +31,12 @@ int		complete_token(t_token *token, int state, t_reader *reader)
 {
 	int		ret;
 
-	printf("-------- complete -------\n");
-//	print_token(token);
-	if (g_automate_lex[state][0] == -2 || g_automate_lex[state][0] == -3)
 	{
 		token->lexem = state;
 		if ((ret = create_value(token, reader)))
-		{
-			free(token);
 			return (ret);
-		}
+		ft_strdel(&(reader->rest));
 	}
-	else
-		token->value = reader->buff;
-	printf("-------------------------\n");
 	return (0);
 }
 
@@ -68,7 +60,6 @@ void	append_token(t_token **tokens, t_token *token)
 t_token	*copy_token(t_token *token)
 {
 	t_token *new;
-//
 	if (!(new = (t_token*)malloc(sizeof(t_token))))
 		return (NULL);
 	if (!(new->value = ft_strdup(token->value)))
@@ -109,4 +100,21 @@ t_token	*get_back_token(t_token **tokens)
 		return (current);
 	}
 	return (NULL);
+}
+
+void		remove_token(t_token **tokens, t_token *token)
+{
+	t_token	*tmp;
+
+	if (*tokens == token)
+	{
+		*tokens = NULL;
+		free_token(&token);
+		return ;
+	}
+	tmp = *tokens;
+	while (tmp->next != token)
+		tmp = tmp->next;
+	tmp->next = NULL;
+	free_token(&token);
 }

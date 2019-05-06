@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 17:40:51 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/06 19:57:06 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,8 @@ static int	token_manager(t_token **token, t_token **tokens, t_reader *reader,\
 		append_token(labels, new);
 	}
 	*token = NULL;
-//	if (reader->cursor + 1 != reader->nb_chars)
 	if (!(*token = create_token(&(reader->buff[reader->cursor + 1]), reader, 1)))
-		return (1);
+			return (1);
 	return (0);
 }
 
@@ -77,50 +76,50 @@ static int		state_manager_scan(t_token **tokens, t_token **token,\
 	return (0);
 }
 
-static void		remove_token(t_token **tokens, t_token *token)
-{
-	t_token	*tmp;
-
-	if (*tokens == token)
-	{
-		*tokens = NULL;
-		free_token(&token);
-		return ;
-	}
-	tmp = *tokens;
-	while (tmp->next != token)
-		tmp = tmp->next;
-	tmp->next = NULL;
-	free_token(&token);
-}
-
 int			manage_last_token(t_reader *reader, t_token **tokens)
 {
 	t_token *token;
 	int		ret;
 	
-	printf("manage last token\n");
-	token = *tokens;
-	while (token->next)
-		token = token->next;
+	token = get_back_token(tokens);
 	if (g_automate_lex[token->lexem][0] == -2\
 			|| g_automate_lex[token->lexem][0] == -3)
 		return (0);
-	reader->cursor = 0;
 	reader->state = automate('\n', reader->state);
-	if ((ret = complete_token(token, reader->state, reader)))
-	{		
-		token->value = NULL;
-		remove_token(tokens, token);
-		ft_strdel(&(reader->rest));
-		return (ret);
-	}
 	if (g_automate_lex[reader->state][0] != -2\
 			&& g_automate_lex[reader->state][0] != -3)
 	{
 		token->value = NULL;
+		free_token(&token);
 		return (print_lex_error(reader->line, reader->col));
 	}
+	reader->cursor = 0;
+	if ((ret = complete_token(token, reader->state, reader)))
+	{		
+		token->value = NULL;
+		free_token(&token);
+		return (ret);
+	}
+	append_token(tokens, token);
+	return (0);
+}
+
+int				manage_end_buffer(t_reader *reader, t_token **tokens, t_token *token)
+{
+	int ret;
+
+
+	if (g_automate_lex[reader->state][0] != -2 && g_automate_lex[reader->state][0] != -3)
+	{
+		if (ft_strnappend(&(reader->rest), token->value,\
+					reader->buff + reader->cursor - token->value)) // + 1 ???
+			return (-1); 
+		token->value = reader->buff;
+	}
+	else
+		if ((ret = complete_token(token, reader->state, reader)))
+			return (ret);
+	append_token(tokens, token);
 	return (0);
 }
 
@@ -130,9 +129,8 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 	int			ret;
 
 	if (!(token = get_back_token(tokens)))
-		if (reader->cursor != reader->nb_chars)
-			if (!(token = create_token(&(reader->buff[reader->cursor]), reader, 0)))
-				return (-1);
+		if (!(token = create_token(&(reader->buff[reader->cursor]), reader, 0)))
+			return (-1);
 	while (reader->cursor < reader->nb_chars)
 	{
 		reader->state = automate(reader->buff[reader->cursor], reader->state);
@@ -147,15 +145,8 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 			reader->col + 1;
 		(reader->cursor)++;
 	}
-	if (token && ft_strnappend(&(reader->rest), token->value,\
-				&(reader->buff[reader->cursor]) - token->value)) // + 1 ???
-		return (-1); 
-	if (token) //verif
-	{
-		if ((ret = complete_token(token, reader->state, reader)))
-			return (ret);
-		append_token(tokens, token);
-	}
+	if ((ret = manage_end_buffer(reader, tokens, token)))
+		return (ret);
 	return (0);
 }
 
@@ -183,8 +174,10 @@ int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 		}
 	}
 	if ((ret = manage_last_token(&reader, tokens)))
+	{
+		ft_strdel(&(reader.rest));
 		return (ret);
+	}
 	ft_strdel(&(reader.rest));
-	check_tokens(*labels);
 	return (0);
 }

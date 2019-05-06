@@ -7,4 +7,4 @@ loop: live %1
 zjmp %:loop
 live %1
 lldi :loop, %:loop,r1
-tes5t
+sti
