@@ -6,22 +6,29 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 13:38:12 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/03 18:31:45 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 17:22:05 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-void	complete_labels(t_writer *writer, char *label, t_token *labels)
+void	complete_labels(t_writer *writer, t_token *label, t_token *labels)
 {
-	while (labels)
+	t_token	*current;
+	
+	while (label)
 	{
-		if (!(ft_strcmp(label, labels->value)))
+		current = labels;
+		while (current)
 		{
-			labels->inst_address = writer->address + writer->cursor;
-			break ;
+			if (!(ft_strcmp(label->value, current->value)))
+			{
+				current->inst_address = writer->address + writer->cursor;
+				break ;
+			}
+			current = current->next;
 		}
-		labels = labels->next;
+		label = label->next;
 	}
 }
 

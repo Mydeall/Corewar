@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 18:40:23 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 16:31:17 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ void	print_token(t_token *token)
 	print_lexem(token->lexem);
 	printf("\n");
 	printf("value = |%s|\n", token->value);
+	printf("inst_address = |%d|\n", token->inst_address);
+	printf("address = |%d|\n", token->address);
+	printf("line = %d\n", token->line);
+	printf("col = %d\n", token->col);
 }
 
 void	check_tokens(t_token *tokens)
@@ -28,10 +32,7 @@ void	check_tokens(t_token *tokens)
 	while (tokens)
 	{
 		printf("---token no %d:---\n", i);
-		printf("type = %d\n", tokens->lexem);
-		printf("value = %s\n", tokens->value);
-		printf("line = %d\n", tokens->line);
-		printf("col = %d\n", tokens->col);
+		print_token(tokens);
 		i++;
 		tokens = tokens->next;
 	}
@@ -54,6 +55,8 @@ void	check_instructions(t_instr *instructions)
 		while (current_token)
 		{
 			print_lexem(current_token->lexem);
+			printf("\n");
+			printf("address = %d\n", current_token->address);
 			if (current_token->next)
 				printf("->");
 			current_token = current_token->next;
@@ -106,4 +109,7 @@ void	print_lexem(t_lex lexem)
 		printf("[OPCODE]");
 	if (lexem == COMMA)
 		printf("[COMMA]");
+	if (lexem == NONE)
+		printf("[NONE]");
+	
 }

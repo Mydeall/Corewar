@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:46:55 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 19:57:03 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 19:10:03 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@ int		print_lex_error(int line, int col)
 	return (1);
 }
 
-int		print_arg_error(int	error_id)
+int		print_arg_error(int errnum, char *prog_name)
 {
-	if (error_id == 1)
-		write(1, "usage\n", 6);
+	if (errnum == 1)
+		printf("Usage: %s <sourcefile.s>\n", prog_name);
+	else
+		printf("Invalid file name : must be <file_name>.s\n");
 	return (1);
 }
 
@@ -46,7 +48,7 @@ int		print_label_error(t_token *token)
 	return (1);
 }
 
-int		print_syn_error(t_token *token, int state)
+int		print_syn_error(int line, int col, t_lex lexem, int state)
 {
 	int	i;
 	int	j;
@@ -55,8 +57,8 @@ int		print_syn_error(t_token *token, int state)
 	i = -1;
 	j = 0;
 	printf("Syn error line %d, col %d :\nGiven expression : ",
-			token->line, token->col);
-	print_lexem(token->lexem);
+			line, col);
+	print_lexem(lexem);
 	printf("\nExpected expression(s) : ");
 	while (++i < 9)
 	{

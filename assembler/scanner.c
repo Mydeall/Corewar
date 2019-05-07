@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 19:57:06 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 18:59:12 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	token_manager(t_token **token, t_token **tokens, t_reader *reader,\
 	append_token(tokens, *token);
 	if (*token && (*token)->lexem == LABEL)
 	{
-		print_token(*token);
+//		print_token(*token);
 		if (!(new = copy_token(*token)))
 			return (1);
 		append_token(labels, new);
@@ -81,26 +81,40 @@ int			manage_last_token(t_reader *reader, t_token **tokens)
 	t_token *token;
 	int		ret;
 	
-	token = get_back_token(tokens);
+//	printf("manage last\n");
+//	printf("state : %d\n", reader->state);
+//	check_tokens(*tokens);
+	if (!(token = get_back_token(tokens)))
+		return (0);
+//	printf("token : %p\n", token);
 	if (g_automate_lex[token->lexem][0] == -2\
 			|| g_automate_lex[token->lexem][0] == -3)
+	{
+//		printf("last was ok\n");
 		return (0);
-	reader->state = automate('\n', reader->state);
+	}
+	if (reader->state != 0)
+		reader->state = automate('\n', reader->state);
 	if (g_automate_lex[reader->state][0] != -2\
 			&& g_automate_lex[reader->state][0] != -3)
 	{
+//		printf("not final state\n");
 		token->value = NULL;
 		free_token(&token);
-		return (print_lex_error(reader->line, reader->col));
+		return (reader->state == 0 ? 0\
+				: print_lex_error(reader->line, reader->col));
 	}
-	reader->cursor = 0;
+//	reader->cursor = 0;
 	if ((ret = complete_token(token, reader->state, reader)))
 	{		
+//		printf("issue complete\n");
 		token->value = NULL;
 		free_token(&token);
 		return (ret);
 	}
 	append_token(tokens, token);
+//	printf("\n\nend manage :\n");
+//	check_tokens(*tokens);
 	return (0);
 }
 
@@ -109,7 +123,8 @@ int				manage_end_buffer(t_reader *reader, t_token **tokens, t_token *token)
 	int ret;
 
 
-	if (g_automate_lex[reader->state][0] != -2 && g_automate_lex[reader->state][0] != -3)
+	if (g_automate_lex[reader->state][0] != -2\
+			&& g_automate_lex[reader->state][0] != -3)
 	{
 		if (ft_strnappend(&(reader->rest), token->value,\
 					reader->buff + reader->cursor - token->value)) // + 1 ???

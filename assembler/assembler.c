@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 14:28:44 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 19:13:54 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int			write_output(t_writer *writer, char *file_name)
 		return (1);
 	}
 	write(fd, writer->output, writer->address);
-	printf("writing output\n");
+	printf("Writing output program to %s\n", file_name);
 	ft_strdel(&file_name);
 	return (0);
 }
@@ -61,7 +61,7 @@ int			main(int ac, char **av)
 	labels = NULL;
 	instructions = NULL;
 	if (ac < 2 || verif_name(av[ac - 1]))
-		return(print_arg_error(1));
+		return(print_arg_error((ac < 2), av[0]));
 	if ((fd = open(av[ac - 1], O_RDONLY)) == -1)
 		return (print_sys_error(errno));
 	if (scanner_asm(fd, &tokens, &labels)\

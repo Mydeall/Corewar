@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 15:55:02 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/03 18:56:36 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/07 18:57:43 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,24 @@
 
 static int	write_header(t_instr **instructions, t_writer *writer)
 {
+//	t_instr *tmp;
+
 	if (write_into_buffer(writer, COREWAR_EXEC_MAGIC, 4))
 		return (1);
    	if (write_text(writer, (*instructions)->params->value, PROG_NAME_LENGTH))
 		return (1);
+//	tmp = *instructions;
 	*instructions = (*instructions)->next;
+//	free_instruction(&tmp);
 	if (write_into_buffer(writer, 0, 4))
 	   return (1);
 	if (write_into_buffer(writer, 0, 4))
 		return (1);
    	if (write_text(writer, (*instructions)->params->value, COMMENT_LENGTH))
 		return (1);
+//	tmp = *instructions;
 	*instructions = (*instructions)->next;
+//	free_instruction(&tmp);
 	if (write_into_buffer(writer, 0, 4))
 	   return (1);
 	return (0);
@@ -103,8 +109,8 @@ static int	encode_params(t_writer *writer, t_instr *instruction, t_token **queue
 	return (0);
 }
 
-int		write_instructions(t_writer *writer, t_instr *instructions,\
-		t_token *labels, t_token *queue)
+static int		write_instructions(t_writer *writer, t_instr *instructions,\
+		t_token *labels, t_token **queue)
 {
 	unsigned int	inst_address;
 
@@ -113,12 +119,23 @@ int		write_instructions(t_writer *writer, t_instr *instructions,\
 		inst_address = writer->address + writer->cursor;	
 		if (instructions->label)
 			complete_labels(writer, instructions->label, labels);
-		if (write_into_buffer(writer, instructions->opcode, 1)\
-				|| (g_op_tab[instructions->opcode - 1].enc_byte\
-				&& encoding_byte(writer, instructions))\
-				|| encode_params(writer, instructions, &queue, inst_address))
+//		if (write_into_buffer(writer, instructions->opcode, 1)\
+//				|| (g_op_tab[instructions->opcode - 1].enc_byte\
+//				&& encoding_byte(writer, instructions))\
+//				|| encode_params(writer, instructions, queue, inst_address))
+		if (instructions->label && !instructions->params)
+			return (0);
+//		printf("opcode write : %d\n", instructions->opcode);
+//		check_instructions(instructions);
+		if (write_into_buffer(writer, instructions->opcode, 1))
+			return (1);
+//		break ;
+		if (g_op_tab[instructions->opcode - 1].enc_byte\
+				&& encoding_byte(writer, instructions))
+			return (1);
+		if (encode_params(writer, instructions, queue, inst_address))
 		{
-			free_tokens(&queue);
+			free_tokens(queue);
 			ft_strdel(&(writer->output));
 			return (1);
 		}
@@ -136,11 +153,15 @@ int			encoder_asm(t_instr *instructions, t_token *labels, char *file_name)
 	writer.output = NULL;
 	writer.address = 0;
 	queue = NULL;
+//	printf("encodage start: \n");
+//	check_instructions(instructions);
 	if (write_header(&instructions, &writer))
 		return (print_sys_error(errno));
-	//printf("\033[H\033[2J");
-	if (write_instructions(&writer, instructions, labels, queue))
+//	printf("after write : \n");
+//	check_instructions(instructions);
+	if (write_instructions(&writer, instructions, labels, &queue))
 		return (print_sys_error(errno));
+//	check_tokens(labels);
 	if (concat_output(&writer))
 		return (print_sys_error(errno));
 	insert_value(&(writer.output[136]), writer.address - 2192, 4);
