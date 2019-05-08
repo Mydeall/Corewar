@@ -6,13 +6,10 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 12:05:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/06 19:27:26 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:12:09 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include "libft.h"
-*/
 #include "asm.h"
 
 int	ft_strappend(char **str, char *ext)
@@ -64,9 +61,9 @@ int	ft_strnappend(char **str, char *ext, int n)
 
 int	strncmpchr(char *s1, char *s2, int n)
 {
-	int	i;
+	int			i;
 	static int	appel = 0;
-	
+
 	appel++;
 	i = -1;
 	while (++i < n && (s1[i] || s2[i]))

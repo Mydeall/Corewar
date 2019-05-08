@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:46:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 18:59:40 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:05:45 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	free_instruction(t_instr **instruction)
 
 	if (!(*instruction))
 		return ;
-//	check_tokens((*instruction)->label);
 	while ((*instruction)->label)
 	{
 		tmp = (*instruction)->label;
@@ -55,6 +54,7 @@ void	free_tokens(t_token **tokens)
 	}
 	*tokens = NULL;
 }
+
 void	free_manager(t_token *tokens, t_instr *instructions, t_token *labels)
 {
 	t_token	*tmp;

@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 16:31:17 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:18:36 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ void	check_instructions(t_instr *instructions)
 
 void	print_tokens(t_token *tokens)
 {
-	int i;
-	t_token *current;
+	int		i;
+	t_token	*current;
 
 	current = tokens;
 	i = 0;
@@ -86,7 +86,6 @@ void	print_tokens(t_token *tokens)
 		}
 		i++;
 	}
-
 }
 
 void	print_lexem(t_lex lexem)
@@ -94,7 +93,7 @@ void	print_lexem(t_lex lexem)
 	if (lexem == DIRECT)
 		printf("[DIRECT]");
 	if (lexem == INDIRECT)
-		printf("[INDIRECT]");	
+		printf("[INDIRECT]");
 	if (lexem == REGISTER)
 		printf("[REGISTER]");
 	if (lexem == NAME)
@@ -111,5 +110,4 @@ void	print_lexem(t_lex lexem)
 		printf("[COMMA]");
 	if (lexem == NONE)
 		printf("[NONE]");
-	
 }

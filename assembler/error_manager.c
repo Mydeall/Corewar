@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:46:55 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 19:10:03 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:13:54 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int		print_syn_error(int line, int col, t_lex lexem, int state)
 		if (ret != -1)
 		{
 			if (j)
-				printf(", "); 
+				printf(", ");
 			print_lexem(g_index_col_syn[i]);
 			j++;
 		}
@@ -84,7 +84,7 @@ int		print_len_error(t_token *token, int max)
 
 int		print_int_error(t_token *token, int min, int max)
 {
-	printf("Syn error line %d, col %d : invalid value (min = %d | max =  %d)\n",\
-			token->line, token->col, min, max);
+	printf("Syn error line %d, col %d : ", token->line, token->col);
+	printf("invalid value (min = %d | max =  %d)\n", min, max);
 	return (1);
 }

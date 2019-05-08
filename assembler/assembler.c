@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:40:32 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 19:13:54 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:19:39 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ int			write_output(t_writer *writer, char *file_name)
 	file_name[i] = 0;
 	if (!(file_name = ft_strjoin(file_name, ".cor")))
 		return (1);
-	if ((fd = open(file_name, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR)) == -1)
+	if ((fd = open(file_name, O_RDWR | O_CREAT | O_TRUNC,\
+					S_IRUSR | S_IWUSR)) == -1)
 	{
 		ft_strdel(&file_name);
 		return (1);
@@ -61,18 +62,16 @@ int			main(int ac, char **av)
 	labels = NULL;
 	instructions = NULL;
 	if (ac < 2 || verif_name(av[ac - 1]))
-		return(print_arg_error((ac < 2), av[0]));
+		return (print_arg_error((ac < 2), av[0]));
 	if ((fd = open(av[ac - 1], O_RDONLY)) == -1)
 		return (print_sys_error(errno));
 	if (scanner_asm(fd, &tokens, &labels)\
-	   	|| parser_asm(&tokens, &instructions, labels)\
-		|| !encoder_asm(instructions, labels, av[ac - 1]))
+			|| parser_asm(&tokens, &instructions, labels)\
+			|| !encoder_asm(instructions, labels, av[ac - 1]))
 	{
-//		check_tokens(tokens);
 		free_manager(tokens, instructions, labels);
 		return (1);
 	}
-//	check_instructions(instructions);
 	free_manager(tokens, instructions, labels);
-	return(0);
-}	
+	return (0);
+}

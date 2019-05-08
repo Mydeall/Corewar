@@ -6,13 +6,13 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/26 15:52:33 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/07 17:55:30 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:20:09 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-static int		automate_syn(t_token *token,int state)
+static int		automate_syn(t_token *token, int state)
 {
 	int	i;
 	int	new_state;
@@ -43,7 +43,7 @@ static t_instr	*create_instruction(t_token *token)
 	return (new);
 }
 
-static void	append_inst(t_instr **instructions, t_instr *instruction)
+static void		append_inst(t_instr **instructions, t_instr *instruction)
 {
 	t_instr	*current;
 
@@ -56,13 +56,13 @@ static void	append_inst(t_instr **instructions, t_instr *instruction)
 	while (current->next)
 		current = current->next;
 	current->next = instruction;
-}	
+}
 
-static int		state_manager_parser(t_instr **instructions, t_instr **instruction,
-		t_token *token, int *state)
+static int		state_manager_parser(t_instr **instructions,\
+		t_instr **instruction, t_token *token, int *state)
 {
 	int	tmp;
-	
+
 	tmp = *state;
 	if ((*state = automate_syn(token, *state)) == -1)
 		return (print_syn_error(token->line, token->col, token->lexem, tmp));
@@ -87,11 +87,8 @@ static int		state_manager_parser(t_instr **instructions, t_instr **instruction,
 	return (0);
 }
 
-static void	complete_instruction(t_instr **instruction, t_token *token)
-{	
-//	if (token->lexem != NAME && token->lexem != COMMENT && token->lexem != DIRECT\
-//			&& token->lexem != REGISTER && token->lexem != INDIRECT\
-//			&& token->lexem != LABEL) // faire l'inverse
+static void		complete_instruction(t_instr **instruction, t_token *token)
+{
 	if (token->lexem == COMMA || token->lexem == OPCODE\
 			|| token->lexem == CARRIAGE)
 	{
@@ -105,7 +102,7 @@ static void	complete_instruction(t_instr **instruction, t_token *token)
 		append_token(&((*instruction)->params), token);
 }
 
-int			verif_int(char *str, int min, int max, int size)
+int				verif_int(char *str, int min, int max, int size)
 {
 	int				len;
 	int				i;
@@ -125,7 +122,7 @@ int			verif_int(char *str, int min, int max, int size)
 	return (1);
 }
 
-int		check_label(t_token *token, t_token *labels)
+int				check_label(t_token *token, t_token *labels)
 {
 	if (token->lexem == LABEL)
 	{
@@ -142,7 +139,7 @@ int		check_label(t_token *token, t_token *labels)
 		while (labels)
 		{
 			if (!ft_strcmp(token->value + 1, labels->value))
-				break;
+				break ;
 			labels = labels->next;
 		}
 		if (!labels)
@@ -151,9 +148,9 @@ int		check_label(t_token *token, t_token *labels)
 	return (0);
 }
 
-int		check_token(t_token *token, t_token *labels)
+int				check_token(t_token *token, t_token *labels)
 {
-	int 	tmp;
+	int	tmp;
 
 	if (token->lexem == COMMENT || token->lexem == NAME)
 	{
@@ -170,9 +167,10 @@ int		check_token(t_token *token, t_token *labels)
 		if (check_label(token, labels))
 			return (1);
 	return (0);
-}			
+}
 
-int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
+int				parser_asm(t_token **tokens, t_instr **instructions,\
+		t_token *labels)
 {
 	t_token	*tmp;
 	t_instr	*instruction;
@@ -183,7 +181,7 @@ int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 	ret = 0;
 	instruction = NULL;
 	if (!*tokens)
-		return (print_syn_error(1, 1, NONE,  state));
+		return (print_syn_error(1, 1, NONE, state));
 	while (*tokens)
 	{
 		tmp = (*tokens)->next;
@@ -193,7 +191,8 @@ int		parser_asm(t_token **tokens, t_instr **instructions, t_token *labels)
 						&state)))
 			return (ret);
 		if (!tmp && state != 4)
-			ret = print_syn_error((*tokens)->line, (*tokens)->col, NONE,  state);
+			ret = print_syn_error((*tokens)->line,\
+					(*tokens)->col, NONE, state);
 		complete_instruction(&instruction, *tokens);
 		*tokens = tmp;
 	}

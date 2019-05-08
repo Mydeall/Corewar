@@ -6,19 +6,17 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:56:39 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 18:59:12 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 12:50:52 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-//create value --> trimchar(espacement/%/:) + si token --> decoupage spe
-
 static int		automate(char c, int state)
 {
-	int	i;
-	int	new_state;
-	char *ret;
+	int		i;
+	int		new_state;
+	char	*ret;
 
 	i = -1;
 	while (++i < 12)
@@ -38,14 +36,14 @@ static int	token_manager(t_token **token, t_token **tokens, t_reader *reader,\
 	append_token(tokens, *token);
 	if (*token && (*token)->lexem == LABEL)
 	{
-//		print_token(*token);
 		if (!(new = copy_token(*token)))
 			return (1);
 		append_token(labels, new);
 	}
 	*token = NULL;
-	if (!(*token = create_token(&(reader->buff[reader->cursor + 1]), reader, 1)))
-			return (1);
+	if (!(*token = create_token(&(reader->buff[reader->cursor + 1]),\
+					reader, 1)))
+		return (1);
 	return (0);
 }
 
@@ -80,65 +78,52 @@ int			manage_last_token(t_reader *reader, t_token **tokens)
 {
 	t_token *token;
 	int		ret;
-	
-//	printf("manage last\n");
-//	printf("state : %d\n", reader->state);
-//	check_tokens(*tokens);
+
 	if (!(token = get_back_token(tokens)))
 		return (0);
-//	printf("token : %p\n", token);
 	if (g_automate_lex[token->lexem][0] == -2\
 			|| g_automate_lex[token->lexem][0] == -3)
-	{
-//		printf("last was ok\n");
 		return (0);
-	}
 	if (reader->state != 0)
 		reader->state = automate('\n', reader->state);
 	if (g_automate_lex[reader->state][0] != -2\
 			&& g_automate_lex[reader->state][0] != -3)
 	{
-//		printf("not final state\n");
 		token->value = NULL;
 		free_token(&token);
-		return (reader->state == 0 ? 0\
-				: print_lex_error(reader->line, reader->col));
+		return (reader->state ? print_lex_error(reader->line, reader->col) : 0);
 	}
-//	reader->cursor = 0;
 	if ((ret = complete_token(token, reader->state, reader)))
-	{		
-//		printf("issue complete\n");
+	{
 		token->value = NULL;
 		free_token(&token);
 		return (ret);
 	}
 	append_token(tokens, token);
-//	printf("\n\nend manage :\n");
-//	check_tokens(*tokens);
 	return (0);
 }
 
-int				manage_end_buffer(t_reader *reader, t_token **tokens, t_token *token)
+int				manage_end_buffer(t_reader *reader, t_token **tokens,\
+		t_token *token)
 {
 	int ret;
-
 
 	if (g_automate_lex[reader->state][0] != -2\
 			&& g_automate_lex[reader->state][0] != -3)
 	{
 		if (ft_strnappend(&(reader->rest), token->value,\
-					reader->buff + reader->cursor - token->value)) // + 1 ???
-			return (-1); 
+					reader->buff + reader->cursor - token->value))
+			return (-1);
 		token->value = reader->buff;
 	}
-	else
-		if ((ret = complete_token(token, reader->state, reader)))
-			return (ret);
+	else if ((ret = complete_token(token, reader->state, reader)))
+		return (ret);
 	append_token(tokens, token);
 	return (0);
 }
 
-static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
+static int		buff_manager(t_reader *reader, t_token **tokens,\
+		t_token **labels)
 {
 	t_token		*token;
 	int			ret;
@@ -164,7 +149,6 @@ static int		buff_manager(t_reader *reader, t_token **tokens, t_token **labels)
 		return (ret);
 	return (0);
 }
-
 
 int			scanner_asm(int fd, t_token **tokens, t_token **labels)
 {

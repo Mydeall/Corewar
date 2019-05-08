@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 13:38:12 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/07 17:22:05 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 13:15:00 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	complete_labels(t_writer *writer, t_token *label, t_token *labels)
 {
 	t_token	*current;
-	
+
 	while (label)
 	{
 		current = labels;
@@ -47,7 +47,7 @@ void	replace_label_value(t_writer *writer, t_token *labels, t_token *queue)
 
 	while (queue)
 	{
-		current_label = labels;		
+		current_label = labels;
 		while (current_label\
 			&& ft_strcmp(queue->value + 1, current_label->value))
 			current_label = current_label->next;

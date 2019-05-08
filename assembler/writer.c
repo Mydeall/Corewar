@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:54:10 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/03 18:32:34 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 12:37:53 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		write_text(t_writer *writer, char *text, size_t len)
 	i--;
 	while (++i < (int)len)
 		if (write_into_buffer(writer, 0, 1))
-			return (1);	
+			return (1);
 	return (0);
 }
 
@@ -36,10 +36,9 @@ int		concat_output(t_writer *writer)
 		if (!(writer->output = (char*)malloc(writer->cursor)))
 			return (1);
 	}
-	else
-		if (!(writer->output = (char*)realloc(writer->output,
-						writer->address + writer->cursor)))
-			return (1);
+	else if (!(writer->output = (char*)realloc(writer->output,\
+					writer->address + writer->cursor)))
+		return (1);
 	i = -1;
 	while (++i < (int)writer->cursor)
 		writer->output[writer->address++] = writer->buff[i];
@@ -50,7 +49,7 @@ int		concat_output(t_writer *writer)
 void	insert_value(char *str, unsigned int value, int size)
 {
 	int i;
-	
+
 	i = -1;
 	while (++i < size)
 		str[i] = value >> (size * 8 - (i + 1) * 8) & 0xFF;

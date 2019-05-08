@@ -6,15 +6,16 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/07 19:14:03 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 12:54:34 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-t_token	*create_token(char *value, t_reader *reader, int shift)
+t_token		*create_token(char *value, t_reader *reader, int shift)
 {
 	t_token	*token;
+
 	if (!(token = (t_token*)malloc(sizeof(t_token))))
 		return (NULL);
 	token->lexem = NONE;
@@ -27,10 +28,11 @@ t_token	*create_token(char *value, t_reader *reader, int shift)
 	return (token);
 }
 
-int		complete_token(t_token *token, int state, t_reader *reader)
+int			complete_token(t_token *token, int state, t_reader *reader)
 {
 	int		ret;
 
+	if (token)
 	{
 		token->lexem = state;
 		if ((ret = create_value(token, reader)))
@@ -40,7 +42,7 @@ int		complete_token(t_token *token, int state, t_reader *reader)
 	return (0);
 }
 
-void	append_token(t_token **tokens, t_token *token)
+void		append_token(t_token **tokens, t_token *token)
 {
 	t_token *current;
 
@@ -57,9 +59,10 @@ void	append_token(t_token **tokens, t_token *token)
 	current->next = token;
 }
 
-t_token	*copy_token(t_token *token)
+t_token		*copy_token(t_token *token)
 {
 	t_token *new;
+
 	if (!(new = (t_token*)malloc(sizeof(t_token))))
 		return (NULL);
 	if (!(new->value = ft_strdup(token->value)))
@@ -68,8 +71,8 @@ t_token	*copy_token(t_token *token)
 		return (NULL);
 	}
 	new->lexem = token->lexem;
-	new->line= token->line;
-	new->col= token->col;
+	new->line = token->line;
+	new->col = token->col;
 	new->size = token->size;
 	new->address = token->address;
 	new->inst_address = token->inst_address;
@@ -77,7 +80,7 @@ t_token	*copy_token(t_token *token)
 	return (new);
 }
 
-t_token	*get_back_token(t_token **tokens)
+t_token		*get_back_token(t_token **tokens)
 {
 	t_token *current;
 	t_token	*tmp;
