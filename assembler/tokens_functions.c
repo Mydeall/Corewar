@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:58:33 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/08 12:54:34 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 17:28:59 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,18 +28,19 @@ t_token		*create_token(char *value, t_reader *reader, int shift)
 	return (token);
 }
 
-int			complete_token(t_token *token, int state, t_reader *reader)
+t_token		*create_label(t_token *token, t_writer *writer,\
+		unsigned int inst_address, int size)
 {
-	int		ret;
+	t_token	*cp;
 
-	if (token)
-	{
-		token->lexem = state;
-		if ((ret = create_value(token, reader)))
-			return (ret);
-		ft_strdel(&(reader->rest));
-	}
-	return (0);
+	token->address = writer->address + writer->cursor;
+	token->size = size;
+	token->inst_address = inst_address;
+	if (!(cp = copy_token(token)))
+		return (NULL);
+	while (size--)
+		writer->buff[writer->cursor++] = 0;
+	return (cp);
 }
 
 void		append_token(t_token **tokens, t_token *token)
@@ -78,31 +79,6 @@ t_token		*copy_token(t_token *token)
 	new->inst_address = token->inst_address;
 	new->next = NULL;
 	return (new);
-}
-
-t_token		*get_back_token(t_token **tokens)
-{
-	t_token *current;
-	t_token	*tmp;
-
-	if (!*tokens)
-		return (NULL);
-	current = *tokens;
-	tmp = NULL;
-	while (current->next)
-	{
-		tmp = current;
-		current = current->next;
-	}
-	if (current->lexem == NONE)
-	{
-		if (tmp)
-			tmp->next = NULL;
-		else
-			*tokens = NULL;
-		return (current);
-	}
-	return (NULL);
 }
 
 void		remove_token(t_token **tokens, t_token *token)

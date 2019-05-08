@@ -6,13 +6,13 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 12:05:44 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/08 13:12:09 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 15:43:49 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "asm.h"
 
-int	ft_strappend(char **str, char *ext)
+int		ft_strappend(char **str, char *ext)
 {
 	int	i;
 	int	j;
@@ -34,7 +34,7 @@ int	ft_strappend(char **str, char *ext)
 	return (0);
 }
 
-int	ft_strnappend(char **str, char *ext, int n)
+int		ft_strnappend(char **str, char *ext, int n)
 {
 	int	i;
 	int	j;
@@ -59,7 +59,7 @@ int	ft_strnappend(char **str, char *ext, int n)
 	return (0);
 }
 
-int	strncmpchr(char *s1, char *s2, int n)
+int		strncmpchr(char *s1, char *s2, int n)
 {
 	int			i;
 	static int	appel = 0;
@@ -72,4 +72,20 @@ int	strncmpchr(char *s1, char *s2, int n)
 			return (i);
 	}
 	return (-1);
+}
+
+char	*ft_strndup(char *s1, size_t n)
+{
+	size_t	i;
+	char	*dup;
+
+	if (!s1)
+		return (NULL);
+	if (!(dup = (char*)malloc(sizeof(char) * n + 1)))
+		return (NULL);
+	i = -1;
+	while (++i < n)
+		dup[i] = s1[i];
+	dup[i] = '\0';
+	return (dup);
 }

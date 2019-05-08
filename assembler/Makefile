@@ -6,7 +6,7 @@
 #    By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 15:43:12 by ccepre            #+#    #+#              #
-#    Updated: 2019/05/01 14:55:09 by rkirszba         ###   ########.fr        #
+#    Updated: 2019/05/08 18:04:33 by ccepre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,11 +22,15 @@ INC_PATH = ../includes
 SRC_NAME = create_value.c\
 		   ft_strappend.c\
 		   scanner.c\
+		   scanner_functions.c\
 		   assembler.c\
 		   error_manager.c\
+		   error_value_manager.c\
 		   globales.c\
 		   parser.c\
+		   parser_functions.c\
 		   tokens_functions.c\
+		   tokens_functions_scanner.c\
 		   display.c\
 		   free_functions.c\
 		   encoder.c\
@@ -38,7 +42,7 @@ INC_NAME = asm.h \
 		   ft_printf.h \
 		   libft.h
 
-LIB_NAME = libft.a
+LIB_NAME = libftprintf2.a
 
 SRC = $(addprefix $(SRC_PATH)/, $(SRC_NAME))
 #INC = $(addprefix $(INC_PATH)/, $(INC_NAME))

@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:54:10 by rkirszba          #+#    #+#             */
-/*   Updated: 2019/05/08 12:37:53 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 18:15:18 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,31 @@ int		write_into_buffer(t_writer *writer, unsigned int nb, size_t size)
 			return (1);
 	insert_value(&(writer->buff[writer->cursor]), nb, size);
 	writer->cursor += size;
+	return (0);
+}
+
+int		write_output(t_writer *writer, char *file_name)
+{
+	int i;
+	int fd;
+
+	i = -1;
+	while (file_name[++i])
+		if (file_name[i] == '.')
+			break ;
+	file_name[i] = 0;
+	if (!(file_name = ft_strjoin(file_name, ".cor")))
+		return (1);
+	if ((fd = open(file_name, O_RDWR | O_CREAT | O_TRUNC,\
+					S_IRUSR | S_IWUSR)) == -1)
+	{
+		ft_strdel(&file_name);
+		return (1);
+	}
+	write(fd, writer->output, writer->address);
+	write(1, "Writing output program to ", 26);
+	write(1, file_name, ft_strlen(file_name));
+	write(1, "\n", 1);
+	ft_strdel(&file_name);
 	return (0);
 }

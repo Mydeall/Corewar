@@ -6,7 +6,7 @@
 /*   By: ccepre <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:39:12 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/08 13:18:36 by ccepre           ###   ########.fr       */
+/*   Updated: 2019/05/08 18:14:44 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	print_token(t_token *token)
 {
-	printf("type = ");
+	ft_printf("type = ");
 	print_lexem(token->lexem);
-	printf("\n");
-	printf("value = |%s|\n", token->value);
-	printf("inst_address = |%d|\n", token->inst_address);
-	printf("address = |%d|\n", token->address);
-	printf("line = %d\n", token->line);
-	printf("col = %d\n", token->col);
+	ft_printf("\n");
+	ft_printf("value = |%s|\n", token->value);
+	ft_printf("inst_address = |%d|\n", token->inst_address);
+	ft_printf("address = |%d|\n", token->address);
+	ft_printf("line = %d\n", token->line);
+	ft_printf("col = %d\n", token->col);
 }
 
 void	check_tokens(t_token *tokens)
@@ -31,7 +31,7 @@ void	check_tokens(t_token *tokens)
 	i = 0;
 	while (tokens)
 	{
-		printf("---token no %d:---\n", i);
+		ft_printf("---token no %d:---\n", i);
 		print_token(tokens);
 		i++;
 		tokens = tokens->next;
@@ -46,22 +46,22 @@ void	check_instructions(t_instr *instructions)
 	i = 0;
 	while (instructions)
 	{
-		printf("---instruction no %d:---\n", i);
+		ft_printf("---instruction no %d:---\n", i);
 		if (instructions->opcode == 0)
-			printf("name | comment token\n");
+			ft_printf("name | comment token\n");
 		else
-			printf("opcode = %s\n", g_op_tab[instructions->opcode - 1].inst);
+			ft_printf("opcode = %s\n", g_op_tab[instructions->opcode - 1].inst);
 		current_token = instructions->params;
 		while (current_token)
 		{
 			print_lexem(current_token->lexem);
-			printf("\n");
-			printf("address = %d\n", current_token->address);
+			ft_printf("\n");
+			ft_printf("address = %d\n", current_token->address);
 			if (current_token->next)
-				printf("->");
+				ft_printf("->");
 			current_token = current_token->next;
 		}
-		printf("\n");
+		ft_printf("\n");
 		instructions = instructions->next;
 		i++;
 	}
@@ -76,12 +76,12 @@ void	print_tokens(t_token *tokens)
 	i = 0;
 	while (current)
 	{
-		printf("token %d : %p\n", i, current);
+		ft_printf("token %d : %p\n", i, current);
 		current = current->next;
 		if (current && current == current->next)
 		{
-			printf("token %d : %p\n", i + 1, current->next);
-			printf("boucle\n");
+			ft_printf("token %d : %p\n", i + 1, current->next);
+			ft_printf("boucle\n");
 			break ;
 		}
 		i++;
@@ -91,23 +91,23 @@ void	print_tokens(t_token *tokens)
 void	print_lexem(t_lex lexem)
 {
 	if (lexem == DIRECT)
-		printf("[DIRECT]");
+		ft_printf("[DIRECT]");
 	if (lexem == INDIRECT)
-		printf("[INDIRECT]");
+		ft_printf("[INDIRECT]");
 	if (lexem == REGISTER)
-		printf("[REGISTER]");
+		ft_printf("[REGISTER]");
 	if (lexem == NAME)
-		printf("[NAME]");
+		ft_printf("[NAME]");
 	if (lexem == COMMENT)
-		printf("[COMMENT]");
+		ft_printf("[COMMENT]");
 	if (lexem == CARRIAGE)
-		printf("[CARRIAGE RETURN]");
+		ft_printf("[CARRIAGE RETURN]");
 	if (lexem == LABEL)
-		printf("[LABEL]");
+		ft_printf("[LABEL]");
 	if (lexem == OPCODE)
-		printf("[OPCODE]");
+		ft_printf("[OPCODE]");
 	if (lexem == COMMA)
-		printf("[COMMA]");
+		ft_printf("[COMMA]");
 	if (lexem == NONE)
-		printf("[NONE]");
+		ft_printf("[NONE]");
 }

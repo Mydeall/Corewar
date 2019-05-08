@@ -6,7 +6,7 @@
 /*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:02:53 by fnussbau          #+#    #+#             */
-/*   Updated: 2019/05/01 14:49:19 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/08 18:10:27 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,4 +118,5 @@ long long			ft_llpower(long long nb, int power);
 int					ft_numlen(int n);
 char				*ft_strdup_to(char *str, char c);
 int					ft_power(int nb, int pow);
+int					ft_printf(char *format, ...);
 #endif
