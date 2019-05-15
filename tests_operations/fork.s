@@ -1,0 +1,26 @@
+.name		"fork"
+.comment	""
+
+fork %1027
+live %0
+live %0
+live %0
+live %0
+live %0
+fork %-1027
+live %0
+live %0
+live %0
+live %0
+live %0
+live %0
+live %0
+lfork %1027
+live %0
+live %0
+live %0
+live %0
+live %0
+live %0
+live %0
+lfork %-1027

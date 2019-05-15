@@ -6,15 +6,14 @@
 /*   By: malluin <malluin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 15:45:58 by malluin           #+#    #+#             */
-/*   Updated: 2019/04/22 14:25:19 by malluin          ###   ########.fr       */
+/*   Updated: 2019/05/14 16:13:58 by malluin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
 #include <ncurses.h>
 #include <time.h>
-#include "libftprintf.h"
-#include "op_func.h"
+#include "libft.h"
 
 void	reset_time(t_time *time, int *cycles)
 {
@@ -40,60 +39,12 @@ void	event_handler(t_vm *vm, t_time *time, int *cycles)
 		else if (ch == KEY_RIGHT || ch == KEY_LEFT)
 		{
 			if (ch == KEY_RIGHT)
-				vm->cycle_sec = vm->cycle_sec >= 590 ? 600 : vm->cycle_sec + 10;
+				vm->cycle_sec = vm->cycle_sec >= 795 ? 800 : vm->cycle_sec + 5;
 			else if (ch == KEY_LEFT)
-				vm->cycle_sec = vm->cycle_sec <= 10 ? 1 : vm->cycle_sec - 10;
+				vm->cycle_sec = vm->cycle_sec <= 5 ? 1 : vm->cycle_sec - 5;
 			reset_time(time, cycles);
 		}
 	}
-}
-
-void	pc_forward_sequence(t_vm *vm, t_process *proc) // a ecrire
-{
-	vm->arena[proc->pc].proc_id = 0;
-	proc->pc = (proc->pc + proc->step_over) % 4096;
-	vm->arena[proc->pc].proc_id = 1;
-	proc->step_over = 0;
-} // temp
-
-void	pc_forward_one(t_vm *vm, t_process *proc)
-{
-	vm->arena[proc->pc].proc_id = 0;
-	proc->pc = (proc->pc + 1) % 4096;
-	vm->arena[proc->pc].proc_id = 1;
-}
-
-extern t_op op_tab[17];
-
-void	read_op_code(t_vm *vm, t_process *proc)
-{
-
-	proc->next_op = vm->arena[proc->pc].by;
-	if (proc->next_op >= 1 && proc->next_op <= 16)
-		proc->wait_cycles = op_tab[proc->next_op - 1].cycles;
-}
-
-void	perform_op(t_vm *vm, t_process *proc)
-{
-	int		res;
-
-	res = 0;
-	if (proc->next_op >= 1 && proc->next_op <= 16 && op_func[proc->next_op - 1] != NULL)
-	{
-		if (check_args(vm, proc) == 1)
-		{
-			res = op_func[proc->next_op - 1](vm, proc);
-			if (res == 1)
-				pc_forward_sequence(vm, proc); //go forward to next instruction
-			else
-				pc_forward_one(vm, proc); //go forward one byte
-		}
-		else
-			pc_forward_sequence(vm, proc); //go forward one byte
-
-	}
-	else
-		pc_forward_one(vm, proc); //go forward one byte
 }
 
 void	run_process(t_vm *vm)
@@ -101,55 +52,45 @@ void	run_process(t_vm *vm)
 	t_process	*proc;
 
 	proc = vm->process;
-	//inner loop
 	while (proc)
 	{
-		// protection
 		if (proc == NULL)
 			continue;
-		//graphic
-		if (vm->arena[proc->pc].proc_id == 0)
-			vm->arena[proc->pc].proc_id = 1;
-
-		// read op code_start
+		if (vm->arena[verif(proc->pc)].proc_id == 0)
+			vm->arena[verif(proc->pc)].proc_id = 1;
 		if (proc->wait_cycles == 0)
-		{
 			read_op_code(vm, proc);
-		}
-		// decrease wait cycle
 		if (proc->wait_cycles != 0)
 			proc->wait_cycles--;
-
-		//act if wait cycle over
 		if (proc->wait_cycles == 0)
-		{
-			//do action
 			perform_op(vm, proc);
-		}
 		proc = proc->next;
 	}
 }
 
-
 void	ft_step(t_vm *vm)
 {
-	int		i;
+	int				i;
+	static int		last_check = 0;
 
 	i = vm->nb_players - 1;
-	//prelimiary check
-	if (vm->cycles % vm->cycle_to_die == 0)
+	if (vm->cycles >= last_check + vm->cycle_to_die)
 	{
 		vm->current_checks++;
 		remove_dead_process(vm);
-		if (vm->current_checks >= MAX_CHECKS || vm->number_of_live > NBR_LIVE)
+		if (vm->current_checks >= MAX_CHECKS || vm->number_of_live >= NBR_LIVE)
 		{
 			vm->cycle_to_die -= CYCLE_DELTA;
-			vm->current_checks = 0;
+			if ((vm->detail & 32) != 0)
+				ft_printf("Cycle to die is now %d\n", vm->cycle_to_die);
+			reset_lives(vm);
 		}
 		vm->number_of_live = 0;
+		last_check = vm->cycles;
 	}
+	if ((vm->detail & 2) != 0 && vm->nb_process > 0)
+		ft_printf("It is now cycle %d\n", vm->cycles + 1);
 	run_process(vm);
-	// increment_memory(vm);
 	vm->cycles++;
 }
 
@@ -161,28 +102,22 @@ void	main_loop(t_vm *vm)
 	if (!(time = (t_time *)malloc(sizeof(t_time))))
 		exit(-1);
 	reset_time(time, &cycles);
-	while (1 && vm->nb_process > 0)
+	while (vm->nb_process > 0 && vm->cycle_to_die > 0)
 	{
-		if (vm->cycles == vm->dump_cycle)
+		if (vm->cycles == vm->dump_cycle && vm->ncurses == 0)
 		{
 			dump_memory(vm);
-			ft_print_process(vm);
-			break;
+			break ;
 		}
-		if (vm->visualization == 1)
+		if (vm->ncurses == 1)
 		{
 			event_handler(vm, time, &cycles);
-			refresh_window(vm);
 			time->current = clock();
-			move(10, COLS - COLS/6);
-			// printw("  %d %d ", time->current, time->begin);
-			if (((time->current - time->begin) / 1000 < (unsigned long)
-			(cycles * 1000 / vm->cycle_sec)) || vm->stop == 1)
-				continue;
+			if (time_mgt(vm, time, cycles) == 1)
+				continue ;
 		}
 		ft_step(vm);
-		// ft_printf("Cycles %d cycles_to_die %d \n", vm->cycles, vm->cycle_to_die);
 		cycles++;
 	}
-	ft_printf("end");
+	ft_memdel((void**)&time);
 }

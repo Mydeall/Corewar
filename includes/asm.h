@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   asm.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rkirszba <rkirszba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ccepre <ccepre@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 17:09:56 by ccepre            #+#    #+#             */
-/*   Updated: 2019/05/08 19:23:01 by rkirszba         ###   ########.fr       */
+/*   Updated: 2019/05/15 14:43:37 by ccepre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 # include "libft.h"
 # include "op.h"
 
-# define BUFF_SIZE_ASM 1
-# define BUFF_SIZE_W 2048
+# define BUFF_SIZE_ASM 2048
+# define BUFF_SIZE_W 4096
 
 typedef enum		e_lex
 {
@@ -53,7 +53,7 @@ typedef struct		s_token
 
 typedef struct		s_reader
 {
-	char			buff[BUFF_SIZE_ASM + 1];
+	char			buff[BUFF_SIZE_ASM];
 	int				line;
 	int				col;
 	int				cursor;
@@ -106,8 +106,8 @@ int					state_manager_scan(t_token **tokens, t_token **token,\
 int					create_value(t_token *token, t_reader *reader);
 
 void				free_instruction(t_instr **instruction);
-void				free_manager(t_token *tokens, t_instr *instructions,\
-					t_token *labels);
+int					free_manager(t_token *tokens, t_instr *instructions,\
+					t_token *labels, int fd);
 void				free_tokens(t_token **tokens);
 void				free_token(t_token **token);
 
@@ -142,11 +142,7 @@ int					ft_strnappend(char **str, char *ext, int n);
 int					ft_strappend(char **str, char *ext);
 char				*ft_strndup(char *s1, size_t n);
 
-//void				check_tokens(t_token *tokens);
-//void				check_instructions(t_instr *instructions);
 void				print_lexem(t_lex lexem);
-//void				print_token(t_token *token);
-//void				print_tokens(t_token *tokens);
 
 void				insert_value(char *str, unsigned int value, int size);
 int					write_into_buffer(t_writer *writer, unsigned int nb,\
